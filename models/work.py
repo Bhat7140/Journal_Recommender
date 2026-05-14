@@ -9,6 +9,6 @@ class Work:
     year: Optional[int]
     authors: List[str]
     venue: Optional[str]
-    subjects: List[str] #MSC
+    subjects: List[str] #MSC or noMSC
     issn: List[str]
     source: Dict[str, bool]
