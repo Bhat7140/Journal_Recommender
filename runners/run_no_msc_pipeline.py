@@ -2,7 +2,7 @@ from data_sources.zbmath import ZBMathSource
 from data_sources.crossref import CrossrefSource
 from data_sources.openalex import OpenAlexSource
 from pipelines.core_pipeline import Pipeline
-from configs.math_msc_config import MSC_CODES
+from configs.math_keyword_config import QUERIES
 import json
 
 def write_jsonl(path, records):
@@ -16,20 +16,20 @@ def run():
 
     all_results = []
 
-    for code in MSC_CODES:
-        print(f"[MSC] {code}")
+    for q in QUERIES:
+        print(f"[NO-MSC] {q}")
         pipeline.store = {}
-        all_results.extend(pipeline.run(code))
+        all_results.extend(pipeline.run(q))
 
     unique = { (r.doi or (r.title + str(r.year))): r for r in all_results }
     results = list(unique.values())
 
-    write_jsonl("output/msc/raw.jsonl", results)
+    write_jsonl("output/no_msc/raw.jsonl", results)
 
     clean = [r for r in results if r.abstract and len(r.abstract) > 100]
-    write_jsonl("output/msc/clean.jsonl", clean)
+    write_jsonl("output/no_msc/clean.jsonl", clean)
 
-    print(f"[MSC] Raw: {len(results)} | Clean: {len(clean)}")
+    print(f"[NO-MSC] Raw: {len(results)} | Clean: {len(clean)}")
 
 if __name__ == "__main__":
     run()
