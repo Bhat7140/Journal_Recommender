@@ -66,7 +66,7 @@ class Pipeline:
 
             print(
             f"Limited to {len(items)} records "
-            f"(DEFAULT_MAX_RESULTS)"
+            f"({DEFAULT_MAX_RESULTS})"
             )
 
         else:
