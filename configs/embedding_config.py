@@ -24,5 +24,13 @@ EMBEDDING_SCENARIOS = {
         "input_path": BASE_DIR / "output" / "metadata" / "msc" / "clean.jsonl",
         "output_dir": EMBEDDING_OUTPUT_ROOT / "msc_clean",
     },
+    "physics_raw": {
+        "input_path": BASE_DIR / "output" / "metadata" / "physics" / "raw.jsonl",
+        "output_dir": EMBEDDING_OUTPUT_ROOT / "physics_raw",
+    },
+    "physics_clean": {
+        "input_path": BASE_DIR / "output" / "metadata" / "physics" / "clean.jsonl",
+        "output_dir": EMBEDDING_OUTPUT_ROOT / "physics_clean",
+    },
 
 }
