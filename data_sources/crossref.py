@@ -4,9 +4,18 @@ from models.work import Work
 
 class CrossrefSource(BaseSource):
 
+    def __init__(self, work_filters=None):
+        # work_filters: Crossref /works filters for source searches, e.g. has-abstract:1.
+        self.work_filters = work_filters or []
+
     def search(self, query, limit=100):
         url = "https://api.crossref.org/works"
         params = {"query": query, "rows": limit}
+
+        if self.work_filters:
+            # Crossref filters do not isolate physics/math well, but they improve metadata quality.
+            params["filter"] = ",".join(self.work_filters)
+
         data = safe_get(url, params)
         return data.get("message", {}).get("items", [])
 
