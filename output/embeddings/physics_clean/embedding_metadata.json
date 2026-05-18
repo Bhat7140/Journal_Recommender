@@ -1,0 +1,22 @@
+{
+  "run_name": "physics_clean",
+  "embedding_type": "physics",
+  "input_path": "C:\\Users\\shrey\\IdeaProjects\\Journal_Recommender\\output\\metadata\\physics\\clean.jsonl",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_shape": [
+    5680,
+    384
+  ],
+  "normalized": true,
+  "text_fields": [
+    "title",
+    "subjects",
+    "venue",
+    "abstract"
+  ],
+  "output_files": [
+    "works.jsonl",
+    "embeddings.npy",
+    "embedding_metadata.json"
+  ]
+}
