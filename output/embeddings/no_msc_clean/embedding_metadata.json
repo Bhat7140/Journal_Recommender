@@ -1,0 +1,21 @@
+{
+  "run_name": "no_msc_clean",
+  "embedding_type": "no_msc",
+  "input_path": "C:\\Users\\shrey\\IdeaProjects\\Journal_Recommender\\output\\metadata\\no_msc\\clean.jsonl",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_shape": [
+    1357,
+    384
+  ],
+  "normalized": true,
+  "text_fields": [
+    "title",
+    "venue",
+    "abstract"
+  ],
+  "output_files": [
+    "works.jsonl",
+    "embeddings.npy",
+    "embedding_metadata.json"
+  ]
+}

@@ -1,12 +1,12 @@
 import argparse
-from pathlib import Path
 
 from configs.embedding_config import (
     EMBEDDING_BATCH_SIZE,
     EMBEDDING_MODEL_NAME,
     EMBEDDING_OUTPUT_ROOT,
+    EMBEDDING_SCENARIOS,
 )
-from runners.embedding_common import run_embedding_job, safe_run_name
+from runners.embedding_common import resolve_embedding_paths, run_embedding_job
 
 
 def text_for_no_msc_embedding(record):
@@ -28,10 +28,14 @@ def main():
         description="Create MiniLM embeddings without MSC code text."
     )
     parser.add_argument(
+        "--scenario",
+        choices=["no_msc_raw", "no_msc_clean"],
+        default="no_msc_clean",
+        help="Preset embedding scenario from configs.embedding_config.",
+    )
+    parser.add_argument(
         "--input",
-        default="output/no_msc/clean.jsonl",
-        # Put the JSONL file you want here, for example:
-        # --input output/no_msc/raw.jsonl
+        default=None,
         help="Input JSONL file to embed.",
     )
     parser.add_argument(
@@ -59,9 +63,14 @@ def main():
     )
 
     args = parser.parse_args()
-    input_path = Path(args.input)
-    run_name = args.run_name or safe_run_name(input_path)
-    output_dir = Path(args.output_dir) if args.output_dir else EMBEDDING_OUTPUT_ROOT / "no_msc" / run_name
+    if args.input:
+        args.scenario = None
+
+    input_path, output_dir, run_name = resolve_embedding_paths(
+        args=args,
+        scenarios=EMBEDDING_SCENARIOS,
+        default_output_dir=EMBEDDING_OUTPUT_ROOT / "no_msc",
+    )
 
     run_embedding_job(
         input_path=input_path,

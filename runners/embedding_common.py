@@ -77,6 +77,20 @@ def safe_run_name(input_path):
     return "".join(char if char.isalnum() else "_" for char in name).strip("_")
 
 
+def resolve_embedding_paths(args, scenarios, default_output_dir):
+    if args.scenario:
+        scenario = scenarios[args.scenario]
+        input_path = Path(scenario["input_path"])
+        output_dir = Path(args.output_dir) if args.output_dir else Path(scenario["output_dir"])
+        run_name = args.run_name or args.scenario
+    else:
+        input_path = Path(args.input)
+        run_name = args.run_name or safe_run_name(input_path)
+        output_dir = Path(args.output_dir) if args.output_dir else default_output_dir / run_name
+
+    return input_path, output_dir, run_name
+
+
 def run_embedding_job(
     input_path,
     output_dir,
