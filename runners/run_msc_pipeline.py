@@ -9,7 +9,7 @@ from configs.math_msc_config import MSC_CODES
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-OUTPUT_DIR = BASE_DIR / "output" / "msc"
+OUTPUT_DIR = BASE_DIR / "output" / "metadata" /"msc"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def write_jsonl(path, records):

@@ -9,7 +9,7 @@ from configs.math_keyword_config import QUERIES
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-OUTPUT_DIR = BASE_DIR / "output" / "no_msc"
+OUTPUT_DIR = BASE_DIR / "output" / "metadata" / "no_msc"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def write_jsonl(path, records):
