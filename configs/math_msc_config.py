@@ -1,37 +1,37 @@
 MSC_CODES = [
     # Logic & Foundations
-    "msc:03",
+    "cc:03",
 
     # Combinatorics
-    "msc:05",
+    "cc:05",
 
     # Number Theory
-    "msc:11",
+    "cc:11",
 
     # Algebra
-    "msc:12", "msc:13", "msc:14", "msc:15",
-    "msc:16", "msc:17", "msc:18", "msc:19", "msc:20", "msc:22",
+    "cc:12", "cc:13", "cc:14", "cc:15",
+    "cc:16", "cc:17", "cc:18", "cc:19", "cc:20", "cc:22",
 
     # Analysis
-    "msc:26", "msc:28", "msc:30", "msc:31",
-    "msc:32", "msc:33", "msc:34", "msc:35", "msc:37",
+    "cc:26", "cc:28", "cc:30", "cc:31",
+    "cc:32", "cc:33", "cc:34", "cc:35", "cc:37",
 
     # Functional & Harmonic Analysis
-    "msc:40", "msc:41", "msc:42", "msc:43",
-    "msc:44", "msc:45", "msc:46", "msc:47", "msc:49",
+    "cc:40", "cc:41", "cc:42", "cc:43",
+    "cc:44", "cc:45", "cc:46", "cc:47", "cc:49",
 
     # Geometry & Topology
-    "msc:51", "msc:52", "msc:53", "msc:54",
-    "msc:55", "msc:57", "msc:58",
+    "cc:51", "cc:52", "cc:53", "cc:54",
+    "cc:55", "cc:57", "cc:58",
 
     # Probability & Statistics
-    "msc:60", "msc:62",
+    "cc:60", "cc:62",
 
     # Applied Math
-    "msc:65", "msc:68", "msc:70", "msc:74",
-    "msc:76", "msc:78", "msc:80", "msc:81",
-    "msc:82", "msc:83", "msc:85", "msc:86",
+    "cc:65", "cc:68", "cc:70", "cc:74",
+    "cc:76", "cc:78", "cc:80", "cc:81",
+    "cc:82", "cc:83", "cc:85", "cc:86",
 
     # Optimization & Control
-    "msc:90", "msc:91", "msc:92", "msc:93", "msc:94"
+    "cc:90", "cc:91", "cc:92", "cc:93", "cc:94"
 ]

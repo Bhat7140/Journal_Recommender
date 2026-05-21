@@ -60,20 +60,14 @@ def main():
     parser.add_argument(
         "--input",
         default=None,
-        # Put the MSC JSONL file you want here, for example:
-        # --input output/msc/raw.jsonl
         help="Input MSC JSONL file to embed.",
     )
     parser.add_argument(
         "--run-name",
-        # Put the experiment name here, for example:
-        # --run-name msc_clean
         help="Output experiment folder name. Defaults to the input filename.",
     )
     parser.add_argument(
         "--output-dir",
-        # Optional: put a full custom output folder here.
-        # Usually --run-name is enough.
         help="Output folder for works.jsonl, embeddings.npy, and metadata.",
     )
     parser.add_argument(
