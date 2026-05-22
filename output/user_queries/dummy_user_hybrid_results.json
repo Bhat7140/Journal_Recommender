@@ -1,0 +1,844 @@
+{
+  "user_query": {
+    "title": "Cohomology and representations of quantum groups",
+    "abstract": "This manuscript studies cohomological methods for quantum groups and related algebraic structures. We investigate representations, homological invariants, and connections with Lie algebra cohomology.",
+    "embedding_text": "Title: Cohomology and representations of quantum groups\nAbstract: This manuscript studies cohomological methods for quantum groups and related algebraic structures. We investigate representations, homological invariants, and connections with Lie algebra cohomology."
+  },
+  "search": {
+    "index_name": "journal_recommender_msc",
+    "hybrid_pipeline": "journal_recommender_msc_hybrid",
+    "bm25_weight": 0.5,
+    "dense_weight": 0.5,
+    "top_k": 50,
+    "dense_k": 100,
+    "lexical_fields": [
+      "title^3",
+      "abstract"
+    ]
+  },
+  "results": [
+    {
+      "hybrid_score": 0.5,
+      "title": "Quantum groups and quantum cohomology",
+      "year": 2019,
+      "authors": [
+        "Maulik, Davesh",
+        "Okounkov, Andrei"
+      ],
+      "journal_name": "Astérisque",
+      "venue": "Astérisque 408. Paris: Société Mathématique de France (SMF) (ISBN 978-2-85629-900-5/pbk). ix, 209~p. (2019).",
+      "issn": [
+        "2492-5926",
+        "0303-1179"
+      ],
+      "doi": "10.24033/ast.1074",
+      "abstract": "Quantum groups are non-cocommutative Hopf algebra deformations of the universal enveloping of a Lie algebra while quantum cohomology is a commutative deformation of the algebra structure on the cohomology of an algebraic variety that takes into account the enumerative geometry of rational curves in the variety. That is, quantum cohomology is a commutative associative deformation of ordinary multiplication in equivariant cohomology \\(H^\\bullet_{\\mathsf{G}}(X)\\) defined by \\((\\gamma_1 * \\gamma_2, \\gamma_3) = \\sum_{\\beta>0} q^\\beta \\langle \\gamma_1,\\gamma_2,\\gamma_3 \\rangle_\\beta\\), where \\((\\gamma_1,\\gamma_2)=\\int_X \\gamma_1 \\cup \\gamma_2\\) is the standard bilinear form on \\(H^\\bullet_{\\mathsf{G}}(X)\\), \\(\\beta\\) ranges over the cone of effective classes in \\(H_2(X,\\mathbb{Z})\\), \\(q^\\beta\\) denotes the corresponding element of the semigroup algebra of the effective cone, and \\(\\langle \\gamma_1,\\gamma_2,\\gamma_3 \\rangle_\\beta \\in H^\\bullet_{\\mathsf{G}}(\\mathsf{pt},\\mathbb{Q})\\) is the virtual count of rational curves of degree \\(\\beta\\) meeting cycles Poincaré dual to \\(\\gamma_1\\), \\(\\gamma_2\\), and \\(\\gamma_3\\).\n\nThe authors study the classical and quantum equivariant cohomology of Nakajima quiver varieties for a general quiver \\(Q\\), connecting equivariant quantum cohomology of symplectic resolutions with their quantizations and derived autoequivalences. Using a geometric \\(R\\)-matrix formalism (Section 1.2.1, page 3), which is related to the reflection operator in Liouville field theory, they construct the Yangian \\(\\mathsf{Y}_Q\\) of \\(Q\\) acting on the cohomology \\(H(\\mathsf{w}) = \\bigoplus_{\\mathsf{v}} H^\\bullet_{\\mathsf{G}}\\left(\\mathcal{M}_{\\theta,\\zeta}(\\mathsf{v},\\mathsf{w})\\right)\\) of Nakajima quiver varieties. When \\(Q\\) does not have a loop, this construction is related to \\textit{M. Varagnolo}'s [Lett. Math. Phys. 53, No. 4, 273--283 (2000; Zbl 0972.17010)] and \\textit{H. Nakajima}'s [J. Am. Math. Soc. 14, No. 1, 145--238 (2001; Zbl 0981.17016)], who construct a certain subalgebra of \\(\\mathsf{Y}_Q\\) via generators and relations.\n\nThe authors prove a formula for quantum multiplication by divisors in terms of the Yangian action, where the structure constants of quantum multiplication are formal power series in \\(q^\\beta\\). The quantum connection through the commuting difference connection can be identified with the trigonometric Casimir connection for \\(\\mathsf{Y}_Q\\), which is a generalization of the rational Casimir connection. Equivalently, the divisor operators correspond to certain elements of Baxter subalgebras of \\(\\mathsf{Y}_Q\\). A key role is played by geometric shift operators (Section 8.1.7, page 115) which can be identified with the quantum KZ difference connection.\n\nIn the second part of the book under review, the authors give an extended example of the general theory for moduli spaces of sheaves on \\(\\mathbb{C}^2\\) framed at infinity. In Chapter 12 (page 141), the general framework of the quiver has been specialized to the one with one vertex and one loop. The Uhlenbeck compactification, which is the compactification of the moduli of framed instantons, as well as polarizations of Nakajima varieties to construct a Quot-scheme, Baranovsky operators, Fock spaces, and Virasoro algebras have been defined. The Yangian action is analyzed explicitly in terms of a free field realization, and they show that divisor operators generate the quantum ring, which is identified with the full Baxter subalgebras. As a corollary, an action of the \\(W\\)-algebra \\(\\mathcal{W}\\big(\\mathfrak{gl}(r)\\big)\\) on the equivariant cohomology of rank \\(r\\) moduli spaces is obtained."
+    },
+    {
+      "hybrid_score": 0.31253016,
+      "title": "Quantum linear groups",
+      "year": 1991,
+      "authors": [
+        "Parshall, Brian",
+        "Wang, Jian-pan"
+      ],
+      "journal_name": "Memoirs of the American Mathematical Society",
+      "venue": "Mem. Am. Math. Soc. 439, 157 p. (1991).",
+      "issn": [
+        "0065-9266",
+        "1947-6221"
+      ],
+      "doi": "10.1090/memo/0439",
+      "abstract": "In this work quantum groups are thought of as a generalization of affine algebraic groups. The generalization consists in allowing the coordinate ring to be noncommutative. \n\n\nIn this set-up the authors develop quite generally several foundational results in the representation theory for quantum groups - in particular on induction and cohomology. Then they study in detail the quantum linear groups. Here they obtain generalizations of many basic theorems from the representation theory of reductive algebraic groups. They also apply this theory to prove new results about q-Schur algebras. \n\n\nIn a parallel development the reviewer, \\textit{P. Polo} and \\textit{Wen Kexin} have obtained similar results for quantized enveloping algebras [Invent. Math. 104, 1-59 (1991; see the following review)]. (Note that by the results of P. Polo in the appendix of loc. cit. it is possible to translate directly from the quantized enveloping algebra of \\({\\mathfrak g}{\\mathfrak l}_ n\\) to the quantum linear group.)"
+    },
+    {
+      "hybrid_score": 0.2616133,
+      "title": "Bialgebra cohomology, deformations, and quantum groups",
+      "year": 1990,
+      "authors": [
+        "Gerstenhaber, Murray",
+        "Schack, Samuel D."
+      ],
+      "journal_name": "Proceedings of the National Academy of Sciences",
+      "venue": "Proc. Natl. Acad. Sci. USA 87, No. 1, 478-481 (1990).",
+      "issn": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "doi": "10.1073/pnas.87.1.478",
+      "abstract": "The authors introduce the cohomology and deformation theory for a bialgebra \\(A\\) over a commutative unital ring \\(k\\), which gives a natural identification between the underlying \\(k\\)-modules of the original and deformed bialgebra. It is demonstrated that within the present theory, the second cohomology group is the space of infinitesimal deformations. Some explicit deformation formulas are obtained for constructing the quantum groups. Particularly, these formulas yield all \\(\\mathcal{GL}_ q(n)\\) and \\(\\mathcal{SL}_ q(n)\\) as deformations of \\(\\mathcal{GL}(n)\\) and \\(\\mathcal{SL}(n)\\). Using a Hodge decomposition of the underlying cochain complex, the authors determine the cohomology of \\(\\mathcal{GL}(n)\\), and demonstrate that every deformation of \\(\\mathcal{GL}(n)\\) becomes equivalent to one in which the comultiplication remains unchanged, not merely on the elements of the first degree but on all elements, and in which the quantum determinant, viewed as an element of the underlying \\(k\\)-module, is identical to the common one."
+    },
+    {
+      "hybrid_score": 0.25728193,
+      "title": "Graded Lie algebras and intersection cohomology.",
+      "year": 2010,
+      "authors": [
+        "Lusztig, G."
+      ],
+      "journal_name": "Progress in Mathematics",
+      "venue": "Gyoja, Akihiko (ed.) et al., Representation theory of algebraic groups and quantum groups. Based on the 6th international conference by the Graduate School of Mathematics on representation theory of algebraic groups and quantum groups, Nagoya, Japan, June 12--17, 2006. Boston, MA: Birkhäuser (ISBN 978-0-8176-4696-7/hbk; 978-0-8176-4697-4/ebook). Progress in Mathematics 284, 191-224 (2010).",
+      "issn": [
+        "2296-505X",
+        "0743-1643"
+      ],
+      "doi": "10.1007/978-0-8176-4697-4_8",
+      "abstract": "Let \\(\\iota\\colon\\mathbb C^*\\to G\\) be a homomorphism from the multiplicative group to a connected reductive algebraic group \\(G\\) over \\(\\mathbb C\\). The action of \\(\\mathbb C^*\\) provides a grading on the Lie algebra \\(LG\\) of \\(G\\). Let \\(G^\\iota\\) denote the centralizer of the image of \\(\\iota\\). For some nonzero \\(n\\) let \\(L_nG\\) be the degree \\(n\\) part of \\(LG\\).\n\n The paper presents an algorithm to determine multiplicities \\(m_{i;\\mathcal L,\\mathcal L'}\\) of local systems in intersection cohomology sheaves associated to \\(G^\\iota\\)-equivariant local systems on \\(G^\\iota\\)-orbits in \\(L_nG\\). This algorithm is described in section 2 in terms of combinatorial data associated to the situation. The algorithm produces a square matrix \\((c_{\\xi,\\xi'})\\) with entries in \\(\\mathbb Q(v)\\), where \\(v\\) is an indeterminate. Section 3 discusses perverse sheaves. The connection between the square matrix and the multiplicities \\(m_{i;\\mathcal L,\\mathcal L'}\\) is treated in section 4. Termination of the algorithm is not clear from the description in section 2, but this apparently follows from geometry.\n\nFor the entire collection see [Zbl 1206.17001]."
+    },
+    {
+      "hybrid_score": 0.22836629,
+      "title": "Quantum cohomology of flag manifolds and Toda lattices",
+      "year": 1995,
+      "authors": [
+        "Givental, Alexander",
+        "Kim, Bumsig"
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 168, No. 3, 609-641 (1995).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/bf02101846",
+      "abstract": "The quantum cohomology \\(QH^* (X)\\) of a compact Kaehler manifold \\(X\\) is a certain deformation of the cup product multiplication in the ordinary cohomology of \\(X\\). The authors study the relation of the quantum cohomology with the Floer homology and introduce the equivariant quantum cohomology. Then they compute the quantum cohomology algebras of the flag manifolds showing that it does coincide with the algebra of regular functions on an invariant Lagrangian variety of a Toda lattice."
+    },
+    {
+      "hybrid_score": 0.21866186,
+      "title": "A new approach to twisted \\(K\\)-theory of compact Lie groups",
+      "year": 2020,
+      "authors": [
+        "Rosenberg, Jonathan"
+      ],
+      "journal_name": "Algebraic &amp; Geometric Topology",
+      "venue": "Algebr. Geom. Topol. 20, No. 1, 135-167 (2020).",
+      "issn": [
+        "1472-2739",
+        "1472-2747"
+      ],
+      "doi": "10.2140/agt.2020.20.135",
+      "abstract": "The compact connected Lie groups provide a wide class of well studed objects from the point of view of cohomology theories, but not yet of \\(K\\)-theories and is a starting point for many theories like homotopy, \\(C^\\ast\\)-algebras, \\(K\\)-homologies, etc. The twisted \\(K\\)-theory of compact Lie groups is known in many cases, but not yet all. The paper is devoted to computation problem of twisted \\(K\\)-theories of compact Lie groups., The author makes a survey of known results and also proposed some new computation by using the Segal spectral sequences. \nLet \\(\\mathcal H\\) be an infinite dimensional separable Hilbert space, \\(\\mathbb T \\) be a maximal torus in the unitary group \\(U(\\mathcal H)\\).\nGiven a compact topological space \\(X\\), the principal bundle \\(P: PU(\\mathcal H) = U(\\mathcal H)/\\mathbb T \\cong \\mathbb {CP}^\\infty \\hookrightarrow E \\twoheadrightarrow X\\) over \\(X\\) classified the twisted \\(K\\)-theories \\(K^*(X,h)\\) and \\(K_*(X,h)\\) by the elements \\(h\\in H^3(X,\\mathbb Z)\\). \n\nLet \\(G\\) be a connected simple compact Lie group. The 3rd cohomology group \\(H^3(G,\\mathbb Z) \\cong \\mathbb Z\\) is used as the group of twists. The following results are previously known:\n\\begin{itemize}\n\\item[1.] For simple connected and simply connected compact Lie group \\(G\\) of rank \\(\\mathrm{rank}\\; G = n\\), the twisted \\(K\\)-homology \\(K_\\bullet(X,h)\\) is a product of an algebra over \\(\\mathbb Z\\) on \\(n-1\\) odd-degree generators with a finite cyclic group of order \\(c(G,h)\\) a divisor of \\(h>0\\) (Theorem 1).\n\\item[2.] In all the cases of simple connected simply connecte compact Lie group of type \\(A_n\\), \\(B_n\\), \\dots \\(E_8\\) the order \\(c(G,h) =h/\\mathrm{gcd}(h,y(G))\\) of the torsion of \\(K_\\bullet(X,h)\\) and \\(K^\\bullet(X,h)\\)  and \\(y(G)\\) are conjecturally computed (Theorem 2).\n\\item[3.] There exists a homological Segal spectral sequence \\(H_p(B,K_q(F,\\imath^*h)) \\Longrightarrow K_\\bullet(E,h)\\) associated to any fiber bundle of CW complexes \\( F \\xrightarrow{\\imath} B \\xrightarrow{pr} B \\) and a twist \\(h\\in H^3(G,\\mathbb Z)\\) (Theorem 3).\n\\end{itemize}\nThe author used this Segal spectral sequences to provide a new method for computing (co)homological twisted \\(K\\)-theories of rank 2 connected and simply connected compact simple Lie groups. The new results are: \n\\begin{itemize}\n\\item[1.] For the bundle \\(F \\subset E \\twoheadrightarrow B\\), the Hurewicz map \\(\\pi_r(F) \\to H_r(B,K_0(F,\\imath^*h))\\), the high differentials \\(d^2,d^3,\\dots,d^{r-1}\\) leave the 2nd term \\(E^2_{r,0}=H_r(B,K_0(F,\\imath^*h))\\) unchanged (Theroem 6)\n\\item[2.] The Hurewicz map \\(\\pi_4(\\mathbb S^3) \\to K_4(\\mathbb S^3,h) \\cong \\mathbb Z/h\\), \\(h\\ne 0\\), is nonzero if and only if \\(h\\in \\mathbb Z\\) is even (Theorem 9).\n\\item[3.] The Hurewicz maps \\(\\pi_j(\\mathbb S^3) \\cong \\pi_j(P_h) \\to ku_j(P_h)\\) are injective on several cases (Theorem 16).\n\\item[4.] For an odd or \\(2 \\mod 4\\) twist \\(h\\) the odd torsion of the \\(K\\)-homology \\(K_\\bullet(PSp(2),h)\\) of the projective symplectic group \\(PSp(2)\\) and twist \\(h\\) is a cyclic group of order \\(h_{odd}/gcd(h,3)\\), and is \\((\\mathbb Z/2)^4\\) is \\(h\\) is \\(2 \\mod 4\\) (Theorem 17).\n\\end{itemize}\nThe paper is technical but gives a good survey of the problem."
+    },
+    {
+      "hybrid_score": 0.21282756,
+      "title": "Quantum groups at roots of 1",
+      "year": 1990,
+      "authors": [
+        "Lusztig, George"
+      ],
+      "journal_name": "Geometriae Dedicata",
+      "venue": "Geom. Dedicata 35, No. 1-3, 89-114 (1990).",
+      "issn": [
+        "1572-9168",
+        "0046-5755"
+      ],
+      "doi": "10.1007/bf00147341",
+      "abstract": "The quantized deformation \\(U\\) of an enveloping algebra corresponding to the Cartan matrix of a Lie algebra is considered as a \\({\\mathbb{Q}}(v)\\)-algebra. \\({\\mathbb{Q}}\\) denotes the field of rationals and \\(v\\) is the quantum parameter. A subalgebra is defined as a \\(Z[v,v^{-1}]\\)-module. The author obtains a braid group action on \\(U\\) and describes a \\({\\mathbb{Q}}(v)\\)-basis of \\(U\\). The question of a \\(Z[v,v^{-1}]\\)-basis of the subalgebra is reduced to rank two and solved explicitly in that case. In the last part \\(v\\) is assumed to be an \\(\\ell\\)-th root of unity, \\(\\ell\\) odd and in some cases not divisible by 3. A surjective Hopf algebra homomorphism is constructed mapping the quantum algebra onto the ordinary enveloping algebra, the kernel is a finite-dimensional Hopf algebra. \n\n\nFor some details in proof and an enlarged understanding the interested reader is referred to the author's paper [J. Am. Math. Soc. 3, No. 1, 257--296 (1990; Zbl 0695.16006)]."
+    },
+    {
+      "hybrid_score": 0.19714244,
+      "title": "Symmetry, representations, and invariants",
+      "year": 2009,
+      "authors": [
+        "Goodman, Roe",
+        "Wallach, Nolan R."
+      ],
+      "journal_name": "Graduate Texts in Mathematics",
+      "venue": "Graduate Texts in Mathematics 255. New York, NY: Springer (ISBN 978-0-387-79851-6/hbk; 978-0-387-79852-3/ebook). xx, 716~p. (2009).",
+      "issn": [
+        "0072-5285"
+      ],
+      "doi": "10.1007/978-0-387-79852-3",
+      "abstract": "The book under review is a comprehensive introduction to Lie theory, representation theory, invariant theory, and algebraic groups. The book is based on the authors' earlier book [Representations and Invariants of the Classical Groups. Encyclopaedia of Mathematical Sciences. 68. (Cambridge): Cambridge University Press. (1998; Zbl 0901.22001) or (1999; Zbl 0948.22001)]. The philosophy of the earlier book is retained, i.e., presenting the principal theorems of representation theory for the classical matrix groups as motivation for the general theory of reductive groups. A wealth of examples and discussion prepares the reader for the general results now stated and proved in their natural generality. The parts of the previous book that have withstood the authors' many revisions as they lectured from its material have been retained; these parts appear after substantial rewriting and reorganization. The first four chapters are, in large part, newly written and offer a more direct and elementary approach to the subject. Several of the later parts of the book are also new.\n\nThe book is divided into twelve chapters and four appendices. Chapter 1 gives an elementary approach to the classical groups, viewed either as Lie groups or algebraic groups, without using any deep results from differential manifold theory or algebraic geometry. Chapter 2 develops the basic structure of the classical Lie groups and their Lie algebras. Chapter 3 is devoted to Cartan's highest-weight theory and the Weyl group. A general treatment of associative algebras and their representations occurs in Chapter 4, where the key result is the general duality theorem for locally regular representations of a reductive algebraic group. The machinery of Chapters 1--4 is then applied in Chapter 5 to obtain the principal results in classical representation and invariant theory: the first fundamental theorems for the classical groups and the application of invariant theory to representation theory via the duality theorem. Chapter 6 introduces Clifford algebra, the spin groups, and spin representations. Weyl's character formula is derived in Chapter 7 and used in Chapter 8 to derive the branching laws for the classical groups. Chapters 9--10 apply all the machinery developed in previous chapters to analyze the tensor representations of the classical groups. The general study of algebraic groups over \\(\\mathbb C\\) and homogeneous spaces begins in Chapter 11 as a preparation for the geometric approach to representations and invariant theory in Chapter 12. Chapter 12 is devoted to representations of reductive algebraic groups on spaces of regular functions on affine varieties. For example, in Chapter 12 a proof of the celebrated Kostant-Rallis theorem for symmetric spaces is given and every implication for the invariant theory of classical groups is explained. The appendices contain background material on algebraic geometry, multilinear algebra, Lie algebras and Lie groups.\n\nThe book can be used as a source for various kinds of courses. This is further supported by the rich collections of exercises (mostly with detailed hints for solutions) accompanying each section. Local reading is well supported by the structure of the book. The book can be recommended for a rather wide audience of readers: for graduate and postgraduate students as well as for researchers as a reference work."
+    },
+    {
+      "hybrid_score": 0.18971582,
+      "title": "Quantum coadjoint action",
+      "year": 1992,
+      "authors": [
+        "De Concini, C.",
+        "Kac, V. G.",
+        "Procesi, C."
+      ],
+      "journal_name": "Journal of the American Mathematical Society",
+      "venue": "J. Am. Math. Soc. 5, No. 1, 151-189 (1992).",
+      "issn": [
+        "1088-6834",
+        "0894-0347"
+      ],
+      "doi": "10.2307/2152754",
+      "abstract": "This is a continuation of an earlier paper by the first two authors [Proc. Colloq. in Honour of J. Dixmier, Paris 1989, Prog. Math. 92, 471--506 (1990; Zbl 0738.17008)] on representations of quantum groups at roots of 1. Solutions are given to most of the (suitably modified) conjectures of this earlier paper concerning the center and the quantum coadjoint action. Here the quantum groups are simply connected, the adjoint quantum group being the subalgebra of invariants of the center of the corresponding simply connected Lie group.\n\n \nFrom the authors' introduction: ``The classical orbit method relates representations of a Lie group to the orbits of the coadjoint action of this group in the dual of the Lie algebra. The basic observation of the present paper is that representations of a quantum group of roots of 1 are closely related to the orbits of the action of the corresponding group on itself by conjugation.''\n\n\nIn a final section, the authors interpret their results in the language of Poisson algebraic groups."
+    },
+    {
+      "hybrid_score": 0.18923722,
+      "title": "Lie algebra kernels and cohomology",
+      "year": 1954,
+      "authors": [
+        "Hochschild, G."
+      ],
+      "journal_name": "American Journal of Mathematics",
+      "venue": "Am. J. Math. 76, 698-716 (1954).",
+      "issn": [
+        "0002-9327"
+      ],
+      "doi": "10.2307/2372712",
+      "abstract": "The author continues his study of the interpretation of restricted cohomology groups of restricted Lie algebras (cf. preceding review Zbl 0055.26505). Here the 3-dimensional cohomology group is interpreted in terms of ``restricted'' kernels, which are analogous to the kernels of group extension theory."
+    },
+    {
+      "hybrid_score": 0.1872343,
+      "title": "\\(n\\)-ary algebras: a review with applications",
+      "year": 2010,
+      "authors": [
+        "de Azcárraga, J. A.",
+        "Izquierdo, J. M."
+      ],
+      "journal_name": "Journal of Physics A: Mathematical and Theoretical",
+      "venue": "J. Phys. A, Math. Theor. 43, No. 29, Article ID 293001, 117 p. (2010).",
+      "issn": [
+        "1751-8121",
+        "1751-8113"
+      ],
+      "doi": "10.1088/1751-8113/43/29/293001",
+      "abstract": "In this quite impressive review, the authors present a detailed, modern and complete overview of the theory of \\(n\\)-ary algebras and their most relevant and current applications to physical problems. The review is structured in various steps, starting from the case of classical Lie algebras and their main properties, and then gradually introducing and studying the different generalizations of these algebras.\n\nThe paper is divided into 16 sections of varying length, providing the most relevant structural properties of \\(n\\)-ary algebras, as well as their significance in the context of physical problems. The exposition is unified and self contained, containing a huge number of references that allow the reader to look for more details on specific questions. The first section presents an overview of the work, as well as its physical motivation (like recent developments in brane theory). Some general notations and conventions to be used through the review are fixed at the end of the first section.\n\nThe second and third sections summarize some of the fundamental properties of Lie algebras that are of use in the analysis of \\(n\\)-ary algebras, such as the existence of compatible metric tensors, the differential-geometric description of Lie algebras in terms of the Maurer-Cartan equations and various cohomological tools related to the central extensions and deformations. The relation between cocycles and Casimir operators is also briefly outlined. In Section 4 the main facts concerning Leibniz algebras and their cohomology are given. Similarities and main differences of their properties when compared to the classical Lie algebraic case are analyzed in detail. \n\nThe fifth and sixth sections are devoted to higher order or generalized Lie algebras (GLAs). A construction based on cohomological methods is given, where the relation to compact simple Lie algebras is emphasized. With these higher order brackets, the notions of higher order coderivatives and external derivatives are developed, resulting in a natural generalization of the Maurer-Cartan equations, which are described using the (generalized) BRST operators. The section finishes with a brief review of GLAs and strongly homotopy Lie algebras. Section 7 begins with the study of an important class of GLAs, the Filippov algebras. The important derivation property that determines the characteristic identity of this class of algebras also shows their different character from previously discussed structures. The general properties of Filippov algebras are given, with special emphasis on their inner derivations algebra. It is shown that various notions from the classical Lie theory do not generalize in full for Filippov algebras. The main differences arise when studying the simple algebras and the possible notions of solvability. Various examples of finite and infinite dimensional Filippov algebras are given, like the simple and Nambu Filippov algebras. \n\nIn Section 8 the problem of Lie algebras associated to \\(n\\)-Lie algebras is considered, taking into account the important case of Lie algebras associated to 3-Lie algebras, of great importance in high energy physics and notably in the Bagger-Lambert-Gustavsson (BLG) model. With this precedent, the general case is obtained by means of considering the inner derivations. This leads to an analogue of the Whitehead lemmas for Filippov algebras in quite natural way. Finally, the representation theory of Filippov algebras (in the Kasymov approach) is considered. Skipping the antisymmetry constraint, the \\(n\\)-Leibniz algebras are considered in Section 9. The particular case of of Lie-triple systems (3-Leibniz algebras) is considered, prior to the discussion of the homology and cohomology theories of Filippov algebras in Section 11. It is shown that the cohomology can also be used, although with important differences concerning the cohomology complexes, to characterize the central extensions and the (infinitesimal) deformations of Filippov algebras. The appropriate choice for the complexes arises from the study of the central extensions of 3-Lie algebras, and thus do not correspond to the well known case of classical Lie algebras. This poses the problem of finding a corresponding geometrical frame, i.e., the obtainment of equations that replace the Maurer-Cartan equations but have similar properties. These so-called Maurer-Cartan-like equations play an important role in many specific physical problems, like the description of M-branes. In direct analogy with the Lie algebraic case, it is shown that semisimple Filippov algebras are stable, i.e., they do not admit non-trivial deformations. It is at this point where the analogy of the method with the classical Whitehead lemmas emerges clearly. \n\nSection 12 discusses the analogue tools for defining a consistent cohomology theory of \\(n\\)-Leibniz algebras, and their fundamental differences with the Filippov case. Once the study of the main generalizations of Lie algebras has been reviewed, the authors consider the case of generalizations of the Poisson bracket and the standard Poisson structure. Two cases are discussed in detail, namely, the generalized Poisson structure and the Nambu-Poisson structure, and their differences pointed out (like the fact that Nambu-Poisson structures are generalized Poisson structures, while the converse does generally not hold). Main properties of these two classes of algebras are nicely illustrated in tabular form. The authors also devote a paragraph to the problem of quantizing the Nambu-Poisson mechanics, which presents serious difficulties, like the associativity of the quantum operators (with the understanding that the Manin properties of the Nambu-Poisson structure are preserved). \n\nSection 14 is fully devoted to the Bagger-Lambert-Gustavsson model and its Nambu bracket extension, using more the geometrical than the purely physical approach. The main topics discussed in this paragraph are the BLG-Lagrangian, the gauge and supersymmetry transformations, the relation with the Basu-Harvey equation, among others. All these properties are developed having in mind the original proposal of the model, in order to simplify the presentation. Along similar lines of development, Section 15 analyzes the BLG model based on the Nambu bracket Filippov algebra. The last section discusses these structures in the context of physics, briefly commenting on their possibilities to be the adequate object to describe modern developments and the constraints that these algebras present to faithfully reproduce the studied phenomena. Two appendices giving details on the two forms of the Filippov identity and the Nijenhuis-Schouten brackets are included.\n\nThe review provides also a very extensive, complete and up-dated reference list with 318 entries. They cover the topics discussed, as well as many other related ones that were not considered specifically. Although the references are obviously focused on the physical literature dealing with \\(n\\)-ary algebras, they also provide a long list of pure mathematical papers that explore the more formal aspects of the theory.\n\nSummarizing, this review fills an important gap in the physical literature concerning generalized Lie algebras, their structure and representation theory with physical background, and will certainly be of great use for both the specialist and the non-specialist."
+    },
+    {
+      "hybrid_score": 0.16817729,
+      "title": "Cohomology theory in abstract groups. II",
+      "year": 1947,
+      "authors": [
+        "Eilenberg, S.",
+        "MacLane, S."
+      ],
+      "journal_name": "The Annals of Mathematics",
+      "venue": "Ann. Math. (2) 48, 326-341 (1947).",
+      "issn": [
+        "0003-486X"
+      ],
+      "doi": "10.2307/1969174",
+      "abstract": "Sei \\(G\\) eine abelsche Gruppe und \\(Q\\) eine Gruppe von Automorphismen von \\(G\\). Diese Arbeit bringt eine gruppentheoretische Deutung der 3. Kohomologiegruppe \\(H^3(Q, G)\\) (s. vorsteh. Referat Zbl 0029.34001). Ein \\(Q\\)-Kern \\((K,\\Theta)\\) mit Zentrum \\(G\\) ist eine Gruppe \\(K\\) mit Zentrum \\(G\\) und ein Homomorphismus \\(\\Theta\\) von \\(Q\\) in die Gruppe der äußeren Automorphismen von \\(K\\), wobei die einem \\(x\\in Q\\) zugeordnete Automorphismenklasse von \\(K\\) in \\(G\\) gerade den Automorphismus \\(x\\) von \\(G\\) induziert. Es wird ein Produkt für solche Kerne erklärt, das im wesentlichen das direkte Produkt der beiden \\(K\\) mit identifizierten Zentren ist. Ein Kern heißt erweiterbar (extensible), wenn es eine Gruppe \\(E\\supset K\\) mit \\(E/K\\cong Q\\) derart gibt, daß die Automorphismenklasse \\(\\Theta(x)\\) des Elementes \\(x\\in Q\\) gerade die von der Restklasse \\(x\\) von \\(E \\bmod K\\) erzeugte Automorphismenklasse von \\(K\\) ist. Zwei Kerne heißen ähnlich, wenn sie sich nur um erweiterbare Faktoren unterscheiden. Die Ähnlichkeitsklassen von Kernen mit Zentrum \\(G\\) bilden eine abelsche Gruppe, die mit \\(H^3 (Q, G)\\) isomorph ist. Insbesondere ist \\((K,\\Theta)\\) dann und nur dann erweiterbar, wenn die zugehörige Kohomologieklasse \\(= 0\\) ist. Für erweiterbare Kerne stehen die Erweiterungstypen dieses Kernes in eineindeutiger Beziehung zu den entsprechenden Erweiterungstypen des Zentrums \\(G\\) von \\(K\\), d. h. zu den Elementen von \\(H^2 (Q, G)\\)."
+    },
+    {
+      "hybrid_score": 0.16755866,
+      "title": "A remark on calibrations and Lie groups",
+      "year": 2023,
+      "authors": [
+        "Hitchin, Nigel"
+      ],
+      "journal_name": "Pure and Applied Mathematics Quarterly",
+      "venue": "Pure Appl. Math. Q. 19, No. 6, 2663-2673 (2023).",
+      "issn": [
+        "1558-8599",
+        "1558-8602"
+      ],
+      "doi": "10.4310/pamq.2023.v19.n6.a2",
+      "abstract": "Amongst the three-dimensional subgroups of a simple Lie group there is a particularly distinguished one, the principal three-dimensional subgroup. \\textit{B. Kostant} [Am. J. Math. 81, 973--1032 (1959; Zbl 0099.25603)] showed that under the action of this group the Lie algebra decomposes as\n\\[\n\\mathfrak{g}=V_{1}\\oplus V_{2}\\oplus\\cdots\\oplus V_{l}\n\\]\ninto irreducible representations of \\(\\mathrm{SO}\\left( 3\\right) \\)\\ whose dimensions are precisely the degrees \\(d_{i}\\)\\ of the generators of the cohomology. The author [Springer Proc. Math. 8, 135--156 (2011; Zbl 1264.32007)] conjectured that for each subspace \\(V_{i}\\)\\ there exists a corresponding generator which restricts trivially.\n\nThis paper first observes that the function defined by the harmonic representatives \\(\\varphi_{i}\\) of the cohomology generators on the Grassmannian of oriented subspaces of \\(\\mathfrak{g}\\)\\ of dimension \\(d_{i}\\)\\ has a critical point on \\(V_{i}\\). If this critical value is nonzero, then any submanifold of dimension \\(d_{i}\\)\\ tangential to a conjugate of \\(V_{i}\\)\\ is minimal [\\textit{C. Robles}, Ill. J. Math. 56, No. 2, 383--395 (2012; Zbl 1282.53046)]. If the nonzero value is the maximum, then \\(\\varphi_{i}\\)\\ defines a calibration and any such submanifold is volume minimizing. The author then searches for nonzero values by using the transitive action of groups on odd-dimensional spheres as well as an argument initiated by \\textit{X. Liu} [Am. J. Math. 117, No. 5, 1203--1248 (1995; Zbl 0836.53043)]. \n\nThe author mentions the entirely different context [Springer Proc. Math. 8, 135--156 (2011; Zbl 1264.32007)] in which the conjecture arose, involving the moduli space of stable bundles on a curve \\(C\\)."
+    },
+    {
+      "hybrid_score": 0.16601175,
+      "title": "Quantization and unitary representations. I: Prequantization",
+      "year": 1970,
+      "authors": [
+        "Kostant, Bertram"
+      ],
+      "journal_name": "Lecture Notes in Mathematics",
+      "venue": "Lectures in modern analysis and applications. III, Lect. Notes Math. 170, 87-208 (1970).",
+      "issn": [
+        "1617-9692",
+        "0075-8434"
+      ],
+      "doi": "10.1007/bfb0079068",
+      "abstract": "[This article was published in the book announced in this Zbl 0213.00101.]\n\n \nAs the author says ``this paper is the first part of a two part paper dealing with the question of setting up a unified theory of unitary representations of connected Lie groups'' in the spirit of the program briefly sketched by the author in a short announcement, entitled: Orbits, symplectic structure and representation theory [Proc. United States-Japan Semin. Differ. Geom., Kyoto 1965, 71 (1966)]. This general approach to representation theory is essentially based an the use of symplectic manifolds and quantization. Without going into the matter here, it is worth mentioning that making use of this theory L. Auslander and the author have succeeded in generalizing Kirillov's result on nilpotent groups, obtaining a complete description of the set of all unitary equivalence classes of irreducible unitary representations of a connected, simply connected type I solvable Lie group and also a criterion for being of type I, expressed in these terms. [See \\textit{L. Auslander} and the author, Bull. Am. Soc. 73, 692--695 (1967; Zbl 0203.03302); Invent. Math. 14, 255--354 (1971; Zbl 0233.22005)]. The present paper is devoted to the differential geometry foundations of the theory and considers only pre-quantization. We shall give in the sequel an outline of results. \n\nLet \\(\\mathcal L_c(X)\\) be the set of all equivalence classes \\(\\ell=[(L,\\alpha)]\\) of line bundles with connection over a manifold \\(X\\), which admit an \\(\\alpha\\)-invariant Hermitian structure. The group \\(\\mathrm{Diff}(X)\\) operates on \\(\\mathcal L_c(X)\\) by defining: \\(g\\cdot \\ell=(g^{-1}* \\ell\\) for \\(g\\in \\mathrm{Diff}(X)\\), \\(\\ell \\in \\mathcal L_c(X)\\). Let \\(D_\\ell(X)\\subseteq \\mathrm{Diff}(X)\\) be the isotropy group at \\(\\ell= [(L,\\alpha)]\\) and let \\(E(L,\\alpha)\\) denote the group of all diffeomorphisms of \\(L\\) which are maps of line bundles with connection and preserve the Hermitian structure. The main result of \\S1, Theorem 1.13.2, associates to every line bundle with connection \\((L,\\alpha)\\) an exact sequence of groups \n\\[\n1\\to T\\to E(L,\\alpha)\\to D_\\ell(X)\\to 1\n\\]\n giving \\(E(L,\\alpha)\\) as a central extension of \\(D_\\ell (X)\\) by the circle group \\(T\\). \n\nNow, for any closed 2-form \\(\\omega\\) on \\(X\\) let \\(\\mathcal L_c(X,\\omega)\\) be the set of all \\(\\ell = [(L,\\alpha)]\\in\\mathcal L_c(X)\\) such that \\(\\omega= \\mathrm{curv} (L,\\alpha)\\), i.e. is the curvature form of the connection \\(\\alpha\\). Then \\(\\mathcal L_c(X,\\omega)\\) is not empty if and only if the de Rham cohomology class \\([\\omega] \\in H^2(X,R)\\) is integral (Proposition 2.2.1).\n\nAn important point in \\S2 is Theorem 2.5.1 which states that the character group \\(\\pi_1^*(X)\\) of the fundamental group \\(\\pi_1(X)\\) of \\(X\\) operates in a simply transitive way on \\(\\mathcal L_c(X,\\omega)\\). \n\n\nIn \\S3 the infinitesimal version of Theorem 1.13.1 is established. Theorem 3.3.1 explicitly gives \\(\\underline{e}(L,\\alpha)\\), the Lie algebra of connection preserving vector fields, and associates to every \\([(L,\\alpha)]\\in \\mathcal L_c(X,\\omega)\\) an exact sequence of Lie algebras \n\n\\[\n0\\to R\\to \\underline{e}(L,\\alpha)\\to \\mathcal A(X,\\omega)\\to 0\n\\]\n \nmaking \\(\\underline{e}(L,\\alpha)\\) a central extension of the Lie algebra of Hamiltonian vector fields, \\(\\mathcal A(X,\\omega)\\) by \\(R\\). Assume that \\((X,\\omega)\\) is a symplectic manifold. Then \\(R(X)\\), the space of all real valued smooth functions on \\(X\\), is a Lie algebra under Poisson bracket and one has an exact sequence of Lie algebras \n\\[\n0\\to R\\to R(X)\\to \\mathcal A(X,\\omega)\\to 0.\n\\]\n Then, if in addition \\([\\omega]\\) is integral, one has a commutative diagram \n\n\\[\n***\n\\]\n\nfor any \\([(L,\\alpha)]\\in \\mathcal L_c(X,\\omega)\\).\n\n\nIn \\S4 a Lie algebra isomorphism \\(\\tilde\\delta: R(X)\\to \\underline{e}(L,\\alpha)\\) is constructed which preserves the commutativity of the above diagram (Theorem 4.2.1). A crucial point is that \\(\\tilde\\delta\\) gives rise to a representation \\(\\delta\\) of \\(R(X)\\) on the space \\(S(X,L)\\) of smooth sections of the line bundle \\(L\\). This assignment, mapping functions to operators, which is called ``pre-quantization'' is the first step in the quantization procedure. The second step, involving the notion of a polarization of the symplectic manifold, is not considered in the paper under review. \nNow, assume that a connected, simply connected Lie group \\(G\\) with Lie algebra \\(\\mathcal G\\) operates smoothly on \\(X\\) by a homomorphism \\(\\sigma: G\\to \\mathrm{Diff}(X)\\). One says that \\((X,\\omega)\\) is a \\(G\\)-symplectic space if \\(\\omega\\) is \\(G\\)-invariant and is a \\(G\\)-strongly symplectic space if \\(\\text{Im}(d\\sigma) \\subseteq\\mathcal A(X,\\omega)\\), so that one has a homomorphism \\(d\\sigma: Q\\to \\mathcal A(X,\\omega)\\). A homogeneous \\(G\\)-strongly symplectic space \\((X,\\omega)\\) is called a Hamiltonian \\(G\\)-space if \\(d\\sigma: \\mathcal G\\to\\mathcal A(X,\\omega)\\) can be lifted to a homomorphism \\(\\lambda: \\mathcal G\\to R(X)\\), so that one has a commutative diagram \n\n\n\\[\n***\n\\]\n\n\nThe significance of the notion of Hamiltonian \\(G\\)-space is pointed out by Theorem 5.1.1: Let \\((X,\\omega,\\lambda)\\) be a Hamiltonian \\(G\\)-space with \\([\\omega]\\in H^2(X, R)\\) integral and let \\([(L,\\alpha)]\\in \\mathcal L_c(X, \\omega)\\). Then, there is a unique lifting \\(\\tilde\\sigma: G\\to E(L,\\alpha)\\) of \\(\\sigma\\) such that \\(d\\tilde\\sigma = \\tilde\\delta\\circ\\lambda\\).\n\n\nA vital example of a Hamiltonian \\(G\\)-space is produced in Theorem 5.3.1: Let \\(\\underline{0}\\) denote a \\(G\\)-orbit in \\(\\mathcal G'\\), the dual vector space to \\(\\mathcal G\\), regarded as a \\(G\\)-module with respect to the coadjoint representation, and let \\(f\\in \\underline{0}\\). Using the bilinear form on \\(\\mathcal G\\), \\(B_f(x,y) = \\langle f,[y,x]\\rangle\\) one may define a 2-form \\(\\omega_{\\underline{0}}\\) on \\(\\underline{0}\\). On the other hand the formula, \\(\\lambda_{\\underline{0}}(x) f = \\langle f,x \\rangle\\), \\(f\\in\\underline{0}\\), \\(x\\in\\mathcal G\\), defines a homomorphism \\(\\lambda_{\\underline{0}}: \\mathcal G\\to R(\\underline{0})\\). The triple \\((\\underline{0},\\omega_{\\underline{0}},\\lambda_{\\underline{0}})\\) is a Hamiltonian \\(G\\)-space. Moreover, any manifold which covers a \\(G\\)-orbit in \\(\\mathcal G'\\) has the structure of a Hamiltonian \\(G\\)-space. \n\n\nConversely, Theorem 5.4.1 asserts that the set of \\(G\\)-orbits in \\(\\mathcal G'\\) are universal in\nthe sense that any Hamiltonian \\(G\\)-space \\((X,\\omega,\\lambda)\\) covers a unique orbit not only as a manifold but as a Hamiltonian \\(G\\)-space.\n\n\nThe paper ends up with Theorem 5.7.1, classifying all line bundles with connection over a Hamiltonian \\(G\\)-space \\((X,\\omega,\\lambda)\\) having \\(\\omega\\) as curvature: Let \\((X,\\omega,\\lambda)\\) be a Hamiltonian \\(G\\)-space and let \\(G_p\\) be the isotropy group at \\(p\\in X\\). If \\(\\underline{0}\\) is the \\(G\\)-orbit in \\(\\mathcal G'\\) associated with \\((X,\\omega,\\lambda)\\) and \\(f\\in \\underline{0}\\), let \\(G_f\\) be the isotropy group at \\(f\\), with Lie algebra \\(\\mathcal G_f\\). \\(G_p^\\#\\) denotes the set of all characters \\(\\Lambda: G_p\\to T\\) having as its differential \\(2\\pi i f| \\mathcal G_f\\). Then the cohomology class \\([\\omega]\\in H^2(X,R)\\) is integral if and only if \\(G_p^\\#\\) is not empty and in this case \\(\\pi_1^*(X)\\) acts in a simply transitive way on \\(G_p^\\#\\). Moreover, to each \\(\\ell= [(L,\\alpha)]\\in \\mathcal L_c (X,\\omega)\\) one associates an element \\(\\Delta^\\ell\\in G_p^\\#\\) and the\ncorrespondence \\(\\mathcal L_c (X,\\omega)\\to G_p^\\#\\) given by \\(\\ell\\to\\Lambda^\\ell\\) is a \\(\\pi_1^*(X)\\) map and hence is a bijection. As a corollary, taking \\((X,\\omega,\\lambda)=(\\underline{0},\\omega_{\\underline{0}},\\lambda_{\\underline{0}})\\) one obtains a result generalizing the Borel-Weil theorem in the compact case."
+    },
+    {
+      "hybrid_score": 0.16557425,
+      "title": "Spin and wedge representations of infinite-dimensional Lie algebras and groups",
+      "year": 1981,
+      "authors": [
+        "Kac, Victor G.",
+        "Peterson, Dale H."
+      ],
+      "journal_name": "Proceedings of the National Academy of Sciences",
+      "venue": "Proc. Natl. Acad. Sci. USA 78, 3308-3312 (1981).",
+      "issn": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "doi": "10.1073/pnas.78.6.3308",
+      "abstract": "<jats:p>\n            We suggest a purely algebraic construction of the spin representation of an infinite-dimensional orthogonal Lie algebra (sections 1 and 2) and a corresponding group (section 4). From this we deduce a construction of all level-one highest-weight representations of orthogonal affine Lie algebras in terms of creation and annihilation operators on an infinite-dimensional Grassmann algebra (section 3). We also give a similar construction of the level-one representations of the general linear affine Lie algebra in an infinite-dimensional “wedge space.” Along these lines we construct the corresponding representations of the universal central extension of the group\n            <jats:italic>\n              SL\n              <jats:sub>n</jats:sub>\n            </jats:italic>\n            (\n            <jats:italic>k</jats:italic>\n            [\n            <jats:italic>t,t</jats:italic>\n            <jats:sup>-1</jats:sup>\n            ]) in spaces of sections of line bundles over infinite-dimensional homogeneous spaces (section 5).\n          </jats:p>"
+    },
+    {
+      "hybrid_score": 0.13452691,
+      "title": "Quantum deformation of Lorentz group",
+      "year": 1990,
+      "authors": [
+        "Podleś, P.",
+        "Woronowicz, S. L."
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 130, No. 2, 381-431 (1990).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/bf02473358",
+      "abstract": "A one parameter quantum deformation \\(S_{\\mu}L(2,{\\mathbb{C}})\\) of SL(2,\\({\\mathbb{C}})\\) is defined and investigated. The main problem of the general \\(C^*\\)-algebraic approach to quantum groups proposed by Woronowicz is that it works for compact quantum groups only. For the noncompact case we have to deal with non-unital \\(C^*\\)-algebras which causes difficulties. In the paper under consideration this problem is avoided by applying the dual version of Drinfeld's double group construction to the compact quantum group \\(S_{\\mu}U(2)\\). The finite dimensional representations of the resulting quantum Lorentz group are studied. The existence of non-smooth representations is pointed out. Finally, the bicovariant bimodules over \\(S_{\\mu}U(2)\\) are classified using the correspondence between the bicovariant bimodules over the compact quantum group and the representations of the double group built over it."
+    },
+    {
+      "hybrid_score": 0.12443735,
+      "title": "Khovanov-Rozansky homology and topological strings",
+      "year": 2005,
+      "authors": [
+        "Gukov, Sergei",
+        "Schwarz, Albert",
+        "Vafa, Cumrun"
+      ],
+      "journal_name": "Letters in Mathematical Physics",
+      "venue": "Lett. Math. Phys. 74, No. 1, 53-74 (2005).",
+      "issn": [
+        "0377-9017",
+        "1573-0530"
+      ],
+      "doi": "10.1007/s11005-005-0008-8",
+      "abstract": "The quantum link invariant \\(P_N\\) is a specialization of the HOMFLYpt polynomial. This invariant can be expressed in terms of a certain representation of the quantum group \\(sl(N)\\), and has been reformulated in terms of Gromov-Witten invariants and BPS degeneracies. In this paper, the authors conjecture a relationship between the categorified version of \\(P_N\\), i.e., Khovanov's \\(\\text{sl}(N)\\) knot homology invariant, and the BPS spectrum of states in open topological strings. Some explicit computations are described (the unknot, the trefoil, and \\(5_1\\)) whose results are shown to be consistent with the conjecture."
+    },
+    {
+      "hybrid_score": 0.12310081,
+      "title": "Quantum \\(K\\)-theory. I: Foundations",
+      "year": 2004,
+      "authors": [
+        "Lee, Y.-P."
+      ],
+      "journal_name": "Duke Mathematical Journal",
+      "venue": "Duke Math. J. 121, No. 3, 389-424 (2004).",
+      "issn": [
+        "0012-7094"
+      ],
+      "doi": "10.1215/s0012-7094-04-12131-1",
+      "abstract": "The author studies the foundations of quantum \\(K\\)-theory, a \\(K\\)-theoretic version of quantum cohomology theory, giving a deformation of the ordinary \\(K\\)-ring \\(K(X)\\) of a smooth projective variety \\(X\\), analogous to the relation between quantum cohomology and ordinary cohomology. As a result, he develops a new class of Frobenius manifolds, and answers an open question of \\textit{A. Bayer} and \\textit{Y. I. Manin} [\\texttt{http://arxiv.org/abs/math.AG/0103164}]."
+    },
+    {
+      "hybrid_score": 0.108854935,
+      "title": "Quasitriangular Hopf algebras and Yang-Baxter equations",
+      "year": 1990,
+      "authors": [
+        "Majid, Shahn"
+      ],
+      "journal_name": "International Journal of Modern Physics A",
+      "venue": "Int. J. Mod. Phys. A 5, No. 1, 1-91 (1990).",
+      "issn": [
+        "0217-751X",
+        "1793-656X"
+      ],
+      "doi": "10.1142/s0217751x90000027",
+      "abstract": "Summary: This expository article is intended as an informal introduction to the theory of quasitriangular Hopf algebras and its connections with physics. Basic properties and applications of Hopf algebras and Yang-Baxter equations are reviewed, with the quantum group \\(U_ q(sl_ 2)\\) as a frequent example. The development builds up to the representation theory of quasitriangular Hopf algebras. Much of the abstract representation theory is new, including a formula for the rank of a representation."
+    },
+    {
+      "hybrid_score": 0.10721458,
+      "title": "Gromov-Witten classes, quantum cohomology, and enumerative geometry",
+      "year": 1994,
+      "authors": [
+        "Kontsevich, M.",
+        "Manin, Yu."
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 164, No. 3, 525-562 (1994).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/bf02101490",
+      "abstract": "The mathematical aspects of topological quantum field theory have recently led to the concept of quantum cohomology of a complex projective algebraic manifold. Basically, the quantum cohomology of such a manifold \\(V\\) is a formal deformation of its cohomology ring \\(H^* (V, \\mathbb{Q})\\), whose parameters are the coordinates on the space \\(H^* (V, \\mathbb{Q})\\) itself, and this object is used to construct what is called a cohomological field theory (CohFT). The physical concept of free energy (or potential) in such a CohFT corresponds mathematically to a formal series \\(\\Phi^V\\) whose coefficients are given by the number of parametrized rational curves in \\(V\\) satisfying certain incidence conditions.\n\n\nUnder the assumption that such a generating function (potential) \\(\\Phi^V\\) really exists, i.e., that it can be meaningfully defined with respect to the numerical requirements concerning its coefficients, physicists have predicted its analytic behavior with such a precision that its uniqueness would be a consequence, just as the exact values of some numerical invariants of the space of parametrized pointed curves lying in \\(V\\). Some results on this conjectural, highly challenging subject have been obtained in the special case of a Calabi-Yau manifold \\(V\\), where \\(\\Phi^V\\) would describe a variation of Hodge structures of the mirror dual manifold.\n\n\nIn the present paper, the authors develop a formalism of defining (axiomatically) and investigating Gromov-Witten classes. Those appear as a collection of linear maps \n\\[\nI^V_{g,n, \\beta} : H^* (V, \\mathbb{Q})^{\\otimes n} \\to H^* (\\overline M_{g,n}, \\mathbb{Q})\n\\]\n with range in the cohomology ring of the moduli space \\(\\overline M_{g,n}\\) of stable genus-\\(g\\) curves with \\(n\\) marked points and depending on integers \\(g \\geq 0\\), \\(n \\geq 3 - 2g\\), and homology classes \\(\\beta \\in H_2 (V, \\mathbb{Z}) \\). The postulation of a series of formal and geometric properties (or axioms) for these Gromov-Witten classes, together with the geometric intuition behind them, is an elaboration of Witten's treatment [cf. \\textit{E. Witten}, J. Differ. Geom. Suppl. 1, 243-310 (1991; Zbl 0808.32023)] and allows, in the sequel, to establish their existence formally, at least for some classes of Fano varieties \\(V\\) and \\(g = 0\\). This is then used to construct an appropriate potential function \\(\\Phi^V\\), basically with the aid of zero-codimensional Gromov-Witten classes of genus zero.\n\n\nTwo reconstruction theorems show that the Gromov-Witten classes can be calculated recursively, at least in certain particular situations, and that the codimension-zero classes regulate the corresponding compatibility conditions. It turns out that the potential function \\(\\Phi^V\\), defined by the Gromov-Witten classes and the linear superspace structure of the cohomology ring \\(H^*(V,\\mathbb{Q})\\), encodes an extremely rich geometric structure on its convergence domain in \\(H^*(V,\\mathbb{Q})\\), including the Vafa quantum cohomology rings of the Fano variety \\(V\\). A special section is devoted to the discussion of concrete examples, always assuming that the relevant Gromov-Witten classes exist and the potential function can be calculated along the previously described procedure. This leads to precise statements on its coefficients, i.e., to enumerative results on the spaces of rational curves in \\(V\\), and -- via the reconstruction theorems -- to new (conjectural) number-theoretic identities.\n\n\nThe concluding part of the paper provides two possible definitions of a cohomological field theory. One of them is directly based on the axiomatics of the authors' Gromov-Witten classes, and the other one is related to the so-called operads for moduli spaces of stable curves. The formalism developed here is applied to the calculation of the cohomology of the moduli space of curves of genus zero. Using a related result of \\textit{S. Keel} [Trans. Am. Math. Soc. 330, No. 2, 545-574 (1992; Zbl 0768.14002)], the authors derive a complete system of linear relations between the homology classes of the boundary strata of these moduli spaces.\n\n\nAltogether, the present paper is a highly valuable contribution towards the understanding of correlation functions of topological sigma-models from a rigorous algebro-geometric point of view."
+    },
+    {
+      "hybrid_score": 0.10659478,
+      "title": "A vanishing theorem in relative Lie algebra cohomology",
+      "year": 1987,
+      "authors": [
+        "Borel, Armand"
+      ],
+      "journal_name": "Lecture Notes in Mathematics",
+      "venue": "Algebraic groups, Proc. Symp., Utrecht/Neth. 1986, Lect. Notes Math. 1271, 1-16 (1987).",
+      "issn": [
+        "1617-9692",
+        "0075-8434"
+      ],
+      "doi": "10.1007/bfb0079230",
+      "abstract": "[For the entire collection see Zbl 0619.00008.] \n\n\nThis is another example of marvelous expositions of techniques involving intricate mathematics on the highest level by the author. For readers interested in this area of mathematics, the paper is in the ``must read'' category; it is only necessary for the reviewer to paraphrase small parts of the introduction: \n\n\n``This paper is devoted to the proof of a vanishing theorem for the relative Lie algebra cohomology of a semisimple Lie group with respect to tensor products of irreducible finite dimensional and unitary representations. It plays an essential role in the proofs of Zucker's conjecture in rational ranks 1 and 2 (sketched elsewhere)...'' ``...My goal here is to provide an essentially a priori proof of that vanishing theorem. It is still not quite classification free...''"
+    },
+    {
+      "hybrid_score": 0.09777231,
+      "title": "Differential calculus on compact matrix pseudogroups (quantum groups)",
+      "year": 1989,
+      "authors": [
+        "Woronowicz, S. L."
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 122, No. 1, 125-170 (1989).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/bf01221411",
+      "abstract": "This is a sequel to an earlier paper by the author [ibid. 111, No. 4, 613-665 (1987; Zbl 0627.58034)]. There, he introduced and developed the finite-dimensional representation theory of a particular generalization of the concept of a compact Lie group, which has the desirable property of admitting nontrivial deformations. (A more abstract schema has been proposed to the same end by \\textit{V. G. Drinfel'd} [Proc. Int. Congr. Math., Berkeley/Calif. 1986, Vol. 1, 798-820 (1987; Zbl 0667.16003)]. Here the author discusses the foundations of (noncommutative) differential geometry for these objects.\n\n\nA ``differential calculus'' over an algebra \\(\\mathcal A\\) (generalizing the algebra of smooth functions) consists, in principle, of an \\(\\mathcal A\\)- bimodule \\(\\Gamma\\) (generalizing the module of 1-forms), and a derivation \\(d:{\\mathcal A}\\to \\Gamma\\) (corresponding to the exterior derivative). For the author's pseudogroups, the algebra \\(\\mathcal A\\) was part of the definition; however, the choice of differential calculus over \\(\\mathcal A\\) is not canonical, and he remarks that nonstandard calculi may be constructed even on classical compact groups. Given a differential calculus over \\(\\mathcal A\\) which satisfies appropriate covariance conditions, it is possible --- with effort and ingenuity --- to construct suitable, not always transparent, analogues of tensors and forms, of the exterior derivative in all degrees, of left-invariant vector fields and their brackets, of the Maurer-Cartan equation, and of the Jacobi identity. The author comments that for these purposes the ``compactness'' of his pseudogroups, meaning certain algebraic identities of orthogonality in the definition, does not appear essential."
+    },
+    {
+      "hybrid_score": 0.09719533,
+      "title": "Gauge theory and integrability. II",
+      "year": 2018,
+      "authors": [
+        "Costello, Kevin",
+        "Witten, Edward",
+        "Yamazaki, Masahito"
+      ],
+      "journal_name": "Notices of the International Congress of Chinese Mathematicians",
+      "venue": "ICCM Not. 6, No. 1, 120-146 (2018).",
+      "issn": [
+        "2326-4845",
+        "2326-4810"
+      ],
+      "doi": "10.4310/iccm.2018.v6.n1.a7",
+      "abstract": "This paper is a generalization of work by the same authors [the authors, ibid. 6, No. 1, 46--119 (2018; Zbl 1405.81043)]. It has been shown that the rational, elliptic and trigonometric solutions of the Yang-Baxter equation can be derived from a four-dimensional gauge theory. This paper extends the previous analysis to all orders in \\(\\hbar\\). It relies on the Yangian deformation of the Lie algebra, where the deformation parameter is \\(\\hbar\\). Thus, the deformation is a quantum effect. The authors provide RTT presentation for the Yangians of all relevant Lie algebras in Sections 3 to 5 and furthermore, in Sections 7 and 9, RTT relations for the trigonometric and elliptic solutions to the Yang-Baxter equations. The Uniqueness of the \\(R\\)-matrices in the considered cases is discussed to quite some detail."
+    },
+    {
+      "hybrid_score": 0.09610996,
+      "title": "Quiver varieties and finite dimensional representations of quantum affine algebras",
+      "year": 2001,
+      "authors": [
+        "Nakajima, Hiraku"
+      ],
+      "journal_name": "Journal of the American Mathematical Society",
+      "venue": "J. Am. Math. Soc. 14, No. 1, 145-238 (2001).",
+      "issn": [
+        "1088-6834",
+        "0894-0347"
+      ],
+      "doi": "10.1090/s0894-0347-00-00353-2",
+      "abstract": "For a simple finite dimensional Lie algebra \\(\\widehat{g}\\) of type ADE, let \\(g\\) be the corresponding (untwisted) affine Lie algebra and \\(U_q(\\widehat g)\\) its quantum affine algebra. In this paper, the author studies finite dimensional representations of \\(U_q(\\widehat g)\\) using geometry of quiver varieties. His purpose is to solve the following conjecture affirmatively, that is, an equivariant \\(K\\)-homology group of the quiver variety gives the quantum affine algebra \\(U_q(\\widehat g)\\), and to derive results whose analogues are known for \\(H_q\\).\n\n\nIn \\S 1, the author recalls a new realization of \\(U_q(\\widehat g)\\), called Drinfeld realization and introduces the quantum loop algebra \\(U_q(Lg)\\) as a subquotient of \\(U_q(\\widehat g)\\), which will be studied rather than \\(U_q(\\widehat g)\\). The basic results are recalled on finite dimensional representations of \\(U_\\varepsilon(Lg)\\). And, several useful concepts are introduced.\n\n\nIn \\S 2, the author introduces two types of quiver varieties \\({\\mathcal M}(w)\\) and \\({\\mathcal M}_0(\\infty, w)\\) as analogues of \\(T^*{\\mathcal B}\\) and the nilpotent cone \\(\\mathcal N\\) respectively. Their elementary properties are given.\n\n\nIn \\S 3--\\S 8, the author prepares some results on quiver varieties and \\(K\\)-theory which will be used in later sections.\n\n\nIn \\S 9--\\S 11, the author considers an analogue of the Steinberg variety \n\\[\nZ(w) = {\\mathcal M}(w)\\times _{{\\mathcal M}_0(\\infty,w)}{\\mathcal M}(w)\n\\]\n and its equivariant \\(K\\)-homology \\(K^{G_w\\times \\mathbb{C}^*}(Z(w))\\). An algebra homomorphism is constructed from \\(U_q(Lg)\\) to \\(K^{G_w\\times \\mathbb{C}^*}(Z(W)) \\otimes_{\\mathbb{Z}[q,q^{-1}]}\\mathbb{Q}(q)\\). \n\n\nIn \\S 12, the author shows that the above homomorphism induces a homomorphism from \\(U^\\mathbb{Z}_q(Lg)\\) to \\(K^{G_w\\times \\mathbb{C}^*}(Z(w))/\\text{torsion}\\).\n\n\nIn \\S 13, the author introduces a standard module \\(M_{x,a}\\). Thanks to a result in \\S 7, it is proved to be isomorphic to \\(H_*({\\mathcal M}(w)^A_x,\\mathbb{C})\\) via the Chern character homomorphism. Also, it is shown that \\(M_{x,a}\\) is a finite dimensional \\(l\\)-highest weight module. It is conjectured that \\(M_{x,a}\\) is a tensor product of \\(l\\)-fundamental representations in some order, which is proved when the parameter is generic in \\S 14.1.\n\n\nIn \\S 14, it is verified that the standard modules \\(M_{x,a}\\) and \\(M_{y,a}\\) are isomorphic if and only if \\(x\\) and \\(y\\) are contained in the same stratum. Furthermore, the author shows that the index set \\(\\{\\rho\\}\\) of the stratum coincides with the set \\({\\mathcal P} =\\{P\\}\\) of \\(l\\)-dominant \\(l\\)-weights of \\(M_{0,a}\\), the standard module corresponding to the central fiber \\(\\pi^{-1}(0)\\). And, the multiplicity formula \\([M(P) : L(Q)] =\\dim H^*(i^!_x IC({\\mathcal M}^{\\text{reg}}_0(\\rho_Q)))\\) is proved. The result here is simpler than the case of the affine Hecke algebra: nonconstant local systems never appear.\n\n\nLet \\(\\text{Res }M(P)\\) be the restriction of \\(M(P)\\) to a \\(U_\\varepsilon(g)\\)-module. In \\S\\ 15, the author shows the multiplicity formula \\([\\text{Res }M(P) : L(w - v)] \\dim H^*(i_x^! IC({\\mathcal M}^{\\text{reg}}_0(v, w)))\\). This result is compatible with the conjecture that \\(M(P)\\) is a tensor product of \\(l\\)-fundamental representations since the restiction of an \\(l\\)-fundamental representation is simple for type \\(A\\), and Kostka polynomials give tensor product decompositions.\n\n\nTwo examples are given where \\({\\mathcal M}^{\\text{reg}}_0(v, w)\\) can be described explicitly.\n\n\nAs mentioned in the Introduction of this paper, \\(U_q(\\widehat{g})\\) has another realization, called the Drinfeld new realization, which can be applied to any symmetrizable Kac-Moody algebra \\(g\\), not necessarily a finite dimensional one. This generalization also fits the result in this paper, since quiver varieties can be defined for arbitrary finite graphs. If finite dimensional representations are replaced by \\(l\\)-integrable representations, parts of the result in this paper can be generalized to a Kac-Moody algebra \\(g\\), at least when it is symmetric.\n\n\nIf equivariant \\(K\\)-homology is replaced by equivariant homology, one should get the Yangian \\(Y(g)\\) instead of \\(U_q(\\widehat{g})\\). The conjecture is motivated again by the analogy of quiver varieties with \\(T^*\\mathcal B\\). As an application, the affirmative solution of the conjecture implies that the representation theory of \\(U_q(\\widehat g)\\) and that of the Yangian are the same."
+    },
+    {
+      "hybrid_score": 0.09186713,
+      "title": "Characteristic classes of representations",
+      "year": 1976,
+      "authors": [
+        "Quillen, Daniel"
+      ],
+      "journal_name": "Lecture Notes in Mathematics",
+      "venue": "Algebr. \\(K\\)-Theory, Proc. Conf. Evanston 1976, Lect. Notes Math. 551, 189-216 (1976).",
+      "issn": [
+        "1617-9692",
+        "0075-8434"
+      ],
+      "doi": "10.1007/bfb0080002",
+      "abstract": "[This article was published in the bock announced in this Zbl 0328.00005.]\n\nFrom the author's introduction: ``Let \\(A\\) be a ring with identity. For any group \\(G\\), let Is\\((G,A)\\) be the set of isomorphism classes of representation of \\(G\\) over \\(A\\), that is, finitely generated projective \\(A\\)-modules on which \\(G\\) acts linearly. This paper is concerned with characteristic classes of \nsuch representations, that is, natural transformations from Is\\((G,A)\\) to group cohomology. These bear the same relation to the algebraic \\(K\\)-theory of the ring \\(A\\) as characteristic classes of vector bundles do in topological \\(K\\)-theory. -The first part of the paper begins with the definitions and \nshows how characteristic classes can be described in terms of the homology of the infinite general linear group GL\\((A)\\), at least when the coefficients are over a field \\(k\\). I have tried to explain a point of view I have found very useful, namely, that the ``points'' (as in algebraic geometry) of the \nalgebra \\(H_*(GL(A),k)\\) may be identified with stable exponential characteristic classes, that is, characteristic classes which transform direct sums into products like the total Chern class.\n\nThe second part is devoted to an important theorem (theorem 2', \\S5) saying roughly that any exact sequence of representations splits as far as stable characteristic classes are concerned. As a corollary one obtains that for any finite field \\(F\\) of characteristic \\(p\\), GL\\((F)\\) has trivial mod \\(p\\) cohomology; in fact, the proof of theorem is a generalization of this special case. In another paper devoted to algebraic \\(K\\)-theory, I plan to use this result to show that the exterior power operations on representations over a commutative ring induce a \\(\\lambda\\)-ring structure on the corresponding \\(K\\)-theory.''"
+    },
+    {
+      "hybrid_score": 0.0897664,
+      "title": "An analogue of the Borel-Weil-Bott theorem for Hermitian symmetric pairs of non-compact type",
+      "year": 1970,
+      "authors": [
+        "Narasimhan, M. S.",
+        "Okamoto, K."
+      ],
+      "journal_name": "The Annals of Mathematics",
+      "venue": "Ann. Math. (2) 91, 486-511 (1970).",
+      "issn": [
+        "0003-486X"
+      ],
+      "doi": "10.2307/1970635",
+      "abstract": "The Theorem of Borel-Weil-Bott states that all irreducible representations of a compact connected real Lie group can be obtained as representations acting on sheaf cohomology groups associated to \\(G\\) and it is a conjecture of Langlands that all representations belonging to the discrete series of a noncompact connected semisimple real Lie group might be realized on ``\\(L^2\\)-cohomology'' groups. Under the conditions that \\(G\\) admits a finite dimensional faithful representation and that \\(G/K\\) is Hermitian symmetric, \\(K\\) being a maximal compact subgroup, the authors prove that for most discrete classes the conjecture holds. \n\nThe contents of the paper are clearly described in the introduction. ``Let \\(\\mathfrak g\\) and \\(\\mathfrak k\\) be the Lie algebras of \\(G\\) and \\(K\\), respectively. Let \\(\\mathfrak h\\) be a Cartan subalgebra of \\(\\mathfrak k\\). Then \\(\\mathfrak h\\) is also a Cartan subalgebra of \\(\\mathfrak g\\). Choose an ordering on the roots of \\((\\mathfrak g^c, \\mathfrak h^c)\\) compatible with the complex structure on \\(G/K\\). For an irreducible unitary representation \\(\\tau_\\Lambda\\) of \\(K\\) with the highest weight \\(\\Lambda\\), we denote by \\(E_\\Lambda\\) the holomorphic vector bundle on \\(G/K\\) associated to the contragredient representation. Let \\(H^{0,q}_2 (E_\\Lambda)\\) denote the Hilbert space of square-integrable harmonic forms of type \\((0,q)\\) with coefficients in \\(E_\\Lambda\\) (these are the ``square-integrable \\(\\bar\\partial\\)-cohomology spaces attached to \\(E_\\Lambda\\) defined in [\\textit{K. Okamoto} and \\textit{H. Ozeki}, Osaka J. Math. 4, 95--110 (1967; Zbl 0173.23702)]. The unitary representation \\(\\pi^q_\\Lambda\\) of \\(G\\) on \\(H^{0,q}_2 (E_\\Lambda)\\) decomposes into a finite number of irreducible representations each of which belongs to the discrete series for \\(G\\). Let \\(\\rho\\) denote the half sum of positive roots of \\((\\mathfrak g^C, \\mathfrak h^C)\\) and let \\(q_\\Lambda\\) denote the number of non-compact positive roots \\(\\alpha\\) such that \\(\\langle \\Lambda + \\rho, \\alpha\\rangle >0\\). We prove that the alternating sum of the characters of \\(\\pi^q_\\Lambda\\) is equal to \\((-1)^{q_\\Lambda}\\Theta_{\\omega(\\Lambda + \\rho)^*}\\) where \\(\\omega(\\Lambda + \\rho)^*\\) denotes the class of the discrete series contragredient to the one associated with the form \\(\\Lambda + \\rho\\) and \\(\\Theta_{\\omega(\\Lambda + \\rho)^*}\\) its character. This shows that, in any case, all the discrete classes are realized on a subspace of \\(H^{0,q}_2 (E_\\Lambda)\\) for some \\(\\Lambda\\) and some \\(q\\). We define a constant \\(c\\) and we prove that \\(H^{0,q}_2 (E_\\Lambda) =0\\) if \\(q\\ne q_\\Lambda\\) provided that \\(\\vert \\langle \\Lambda + \\rho, \\alpha\\rangle \\vert > c\\) for any non-compact positive root \\(\\alpha\\). The alternating sum formula, together with the vanishing theorem, shows that, if \\(\\Lambda\\) satisfies the above condition, the class of the representation \\(\\pi^{q_\\lambda}_\\Lambda\\) on \\(H^{0,q_\\lambda}_2 (E_\\Lambda)\\) is precisely \\(\\omega(\\Lambda + \\rho)^*\\). \n\nWe now briefly outline the proof of the alternating sum formula. Let \\(L^{0,q}_2 (E_\\Lambda)\\) be the space of square-integrable forms of type \\((0,q)\\) with coefficients in \\(E_\\Lambda\\). The group \\(G\\) acts, via the induced representation, on this space and let \\(L^{0,q}_2 (E_\\Lambda)_d\\) be the discrete part of this space. The representation of \\(G\\) on \\(L^{0,q}_2 (E_\\Lambda)_d\\) decomposes into a finite sum of discrete classes. The Laplacian \\(\\square\\) has only finitely many eigenvalues on \\(L^{0,q}_2 (E_\\Lambda)\\) and the sum of the eigenspaces coincides with \\(L^{0,q}_2 (E_\\Lambda)_d\\). We then have a complex \n\\[ \n\\cdots \\longrightarrow L^{0,q}_2 (E_\\Lambda)_d  \\xrightarrow{\\bar\\partial} L^{0,q+1}_2 (E_\\Lambda)_d  \\longrightarrow \\cdots \n\\] \nand the cohomology of this complex at the \\(q\\)-th stage is isomorphic to \\(H^{0,q}_2 (E_\\Lambda)\\). If \\(\\varphi\\) is a \\(K\\)-finite \\(C^\\infty\\)-function with compact support on \\(G\\), \\(\\varphi\\) defines an operator \\(T_\\varphi^q\\) on  \\(L^{0,q}_2 (E_\\Lambda)_d\\) and \\(\\{T_\\varphi^q\\}\\) forms an endomorphism of finite rank of the above complex. So it suffices to calculate the alternating sum of the traces of the operators \\(T_\\varphi^q\\) on \\(L^{0,q}_2 (E_\\Lambda)_d\\). The alternating sum of the traces of \\(T_\\varphi^q\\) is given by an integral over the union of conjugacy classes of a compact Cartan subgroup. The integral involves the character of the representation of \\(K\\) and the integral is evaluated by using Weyl's character formula for irreducible representations of \\(K\\) and coincides with Harish-Chandra's character formula for the discrete series for \\(G\\).'' \n\nThis paper stimulated further research, see \\textit{R. Hotta} [J. Math. Soc. Japan 23, 384--407 (1971; Zbl 0213.13701)], \\textit{W. Schmid} [Ann. Math. (2) 93, 1--42 (1971; Zbl 0291.43013)], \\textit{R. Parthasarathy} [Ann. Math. (2) 96, 1--30 (1972; Zbl 0249.22003)]."
+    },
+    {
+      "hybrid_score": 0.0809555,
+      "title": "Quantum groups",
+      "year": 1988,
+      "authors": [
+        "Drinfel'd, V. G."
+      ],
+      "journal_name": "Journal of Soviet Mathematics",
+      "venue": "J. Sov. Math. 41, No. 2, 898-915 (1988).",
+      "issn": [
+        "0090-4104",
+        "1573-8795"
+      ],
+      "doi": "10.1007/bf01247086",
+      "abstract": "Translation from Zap. Nauchn. Semin. Leningr. Otd. Mat. Inst. Steklova 155, 18-49 (Russian) (1986; Zbl 0617.16004)."
+    },
+    {
+      "hybrid_score": 0.07011824,
+      "title": "Cohomology of conformal algebras",
+      "year": 1999,
+      "authors": [
+        "Bakalov, Bojko",
+        "Kac, Victor G.",
+        "Voronov, Alexander A."
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 200, No. 3, 561-598 (1999).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/s002200050541",
+      "abstract": "The paper deals with conformal algebras and modules. A cohomology theory of these algebras with coefficients in an arbitrary module has been developed. \n\n\nIn Section 2 the authors construct the basis and reduced complexes for a module \\(M\\) over a conformal algebra \\(A\\). These complexes define the basis and reduced cohomology of a conformal algebra \\(A\\). The properties of this cohomology are explored in Sections 3-6. In Section 7 the authors compute the cohomology with trivial coefficients of the Virasoro conformal algebra Vir. In Section 8 they compute the cohomology of a current conformal algebra \\(\\operatorname {Cur}{\\mathfrak g}\\) with trivial coefficients for a finite-dimensional semisimple Lie algebra \\({\\mathfrak g}\\) and the cohomology with coefficients in the current module. The results allow to classify abelian extensions of current algebras. In Section 9 associative conformal algebras and conformal bimodules over them are considered. The analogues of Hochschild and cyclic cohomology as well as Leibniz cohomology are defined. \n\n\nOther developments of the theory and its relations to cohomology of Cartan's filtered Lie algebras and to Lie algebras in a general pseudo-tensor category are considered in Sections 10-12. A list of open questions is presented in Section 13."
+    },
+    {
+      "hybrid_score": 0.06590261,
+      "title": "Central extensions of quantum current groups",
+      "year": 1990,
+      "authors": [
+        "Reshetikhin, N. Yu.",
+        "Semenov-Tian-Shansky, Michael A."
+      ],
+      "journal_name": "Letters in Mathematical Physics",
+      "venue": "Lett. Math. Phys. 19, No. 2, 133-142 (1990).",
+      "issn": [
+        "0377-9017",
+        "1573-0530"
+      ],
+      "doi": "10.1007/bf01045884",
+      "abstract": "The central extensions of quantum current groups are described. They are the central extensions of noncommutative and noncocommutative Hopf algebras which provide the deformations of the enveloping algebras of affine Lie algebras. For a special value of the central charge the Casimir elements in these algebras are described. From the physicist's point of view the construction carried out in the paper may be considered as the construction of Schwinger terms for a quantum current algebra."
+    },
+    {
+      "hybrid_score": 0.06248271,
+      "title": "Equivariant \\(K\\)-theory and equivariant cohomology",
+      "year": 2003,
+      "authors": [
+        "Rosu, Ioanid",
+        "Knutson, Allen"
+      ],
+      "journal_name": "Mathematische Zeitschrift",
+      "venue": "Math. Z. 243, No. 3, 423-448 (2003).",
+      "issn": [
+        "1432-1823",
+        "0025-5874"
+      ],
+      "doi": "10.1007/s00209-002-0447-1",
+      "abstract": "The purpose of this paper is to describe the \\(T\\)-equivariant \\(K\\)-theory with complex coefficients in terms of equivariant cohomology, for \\(T\\) an abelian compact Lie group.\n\n\nThe idea underlying the work is to construct a version of the equivariant Chern character and to use it for the proposed aim.\n\n\nLet \\(H^*_T(X)\\) be the \\(T\\)-equivariant (Borel) cohomology of the compact \\(T\\)-equivariant manifold \\(X\\) and let \\(K^*_T(X)\\) be the \\(T\\)-equivariant \\(K\\)-theory of \\(X\\). When \\(X\\) is a point, one denotes it by \\(H^*_T\\) and \\(K^*_T\\).\n\n\nFirst, the author defines a sheaf valued equivariant cohomology theory; let \\(C_T\\) be the complex algebraic group of the maximal ideals of \\(K^*_T\\) and denote by \\({\\mathcal O}^h\\) the sheaf of holomorphic functions on \\(C_T\\). One defines a sheaf, denoted by \\({\\mathcal K}_T^*(X)\\), whose stalk at a point \\(\\alpha \\in C_T\\) is: \\({\\mathcal K}_T^*(X)_\\alpha =\\mathbb{H}^*_T(X^\\alpha)\\) where \\(\\mathbb{H}^*_T(-)\\) is the extension of \\(H^*_T(-)\\) by the ring of holomorphic germs at zero on \\(H^*_T\\) and where \\(X^\\alpha\\) is the subspace of \\(X\\) fixed by all elements of the smallest compact subgroup \\(H\\) of \\(T\\) such that \\(\\alpha\\in C_T\\). \n\n\nThe author shows (see Theorem 2.19) that \\({\\mathcal K}^*_T(-)\\) is a \\(T\\)-equivariant cohomology theory on finite complexes with values in the category of coherent holomorphic sheaves of \\(\\mathbb{Z}_2\\)-graded \\({\\mathcal O}^h_{C_T}\\)-algebras. \n\n\nNow, if \\(\\Gamma\\) denotes the global sections functor and if \n\\[\n\\mathbb{K}^*_T (X)=K^*_T (X)\\otimes_{K^*_T}\\Gamma{\\mathcal K}^*_T\n\\]\n is the holomorphic extension of the usual equivariant \\(K\\)-theory, the main result of the article is the Theorem 3.6: there exists an isomorphism \n\\[\n\\varphi_T: \\mathbb{K}^*_T(X)\\to \\Gamma{\\mathcal K}^*_T (X)\n\\]\n of \\(T\\)-equivariant cohomology theories.\n\n\nThis is the sense in which equivariant \\(K\\)-theory with complex coefficients can be described in terms of equivariant cohomology. We remark that the natural map \\(\\varphi_T\\) is essentially a sheaf version of the equivariant Chern character (see Lemma 3.1) and that all construction is clear despite the technical aspect of the sheafifying process.\n\n\nIn the appendix the authors give some applications of the above construction. Firstly they use the Chang-Skjelbred theorem in equivariant cohomology [see \\textit{T. Chang} and \\textit{T. Skjelbred}, Ann. Math., II. Ser. 100, 307--321 (1974; Zbl 0249.57023)] to infer the corresponding results for equivariant \\(K\\)-theory. Finally, as a corollary, they extend a result about the Goresky-Kottwitz-MacPherson manifolds [see \\textit{M. Goresky}, \\textit{R. Kottwitz} and \\textit{R. MacPherson}, Invent. Math. 131, 25--83 (1998; Zbl 0897.22009)] from equivariant cohomology to equivariant \\(K\\)-theory.\n\n\nThis is a good paper with a brilliant exposition. The authors have performed a service to the history of the subject, giving detailed and informed attributions. They also mention several directions for extending the results of the present article."
+    },
+    {
+      "hybrid_score": 0.06070317,
+      "title": "On quantum groups",
+      "year": 1990,
+      "authors": [
+        "Lusztig, George"
+      ],
+      "journal_name": "Journal of Algebra",
+      "venue": "J. Algebra 131, No. 2, 466-475 (1990).",
+      "issn": [
+        "0021-8693"
+      ],
+      "doi": "10.1016/0021-8693(90)90187-s",
+      "abstract": "A Hecke algebra is associated in a natural way to every quantum group of Drinfeld and Jimbo. Then a conjecture is formulated which relates the representation theory of a quantum group at a fixed root of 1 to the representation theory of an affine Lie algebra at a fixed negative level."
+    },
+    {
+      "hybrid_score": 0.055381622,
+      "title": "Representations of algebraic groups",
+      "year": 1963,
+      "authors": [
+        "Steinberg, Robert"
+      ],
+      "journal_name": "Nagoya Mathematical Journal",
+      "venue": "Nagoya Math. J. 22, 33-56 (1963).",
+      "issn": [
+        "0027-7630",
+        "2152-6842"
+      ],
+      "doi": "10.1017/s0027763000011016",
+      "abstract": "<jats:p>Our purpose here is to study the irreducible representations of semisimple algebraic groups of characteristic <jats:italic>p</jats:italic><jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" mime-subtype=\"gif\" xlink:type=\"simple\" xlink:href=\"S0027763000011016_inline1\"/> 0, in particular the rational representations, and to determine all of the representations of corresponding finite simple groups. (Each algebraic group is assumed to be defined over a universal field which is algebraically closed and of infinite degree of transcendence over the prime field, and all of its representations are assumed to take place on vector spaces over this field.)</jats:p>"
+    },
+    {
+      "hybrid_score": 0.0548874,
+      "title": "Cohomological Hall algebra, exponential Hodge structures and motivic Donaldson-Thomas invariants",
+      "year": 2011,
+      "authors": [
+        "Kontsevich, Maxim",
+        "Soibelman, Yan"
+      ],
+      "journal_name": "Communications in Number Theory and Physics",
+      "venue": "Commun. Number Theory Phys. 5, No. 2, 231-352 (2011).",
+      "issn": [
+        "1931-4523",
+        "1931-4531"
+      ],
+      "doi": "10.4310/cntp.2011.v5.n2.a1",
+      "abstract": "The primary goal of the paper under review is to give a precise definition of the graded algebra of the BPS states which from the string theory one expects to get from a certain class of four dimensional quantum theories with \\(N=2\\) spacetime supersymmetry (see \\textit{[J. A. Harvey} and \\textit{G. Moore}, ``On the algebras of BPS states'', Commun. Math. Phys. 197, No. 3, 489--519 (1998; Zbl 1055.81616)]). In the paper under review to each smooth algebra with potential is assigned a graded algebra called the Cohomological Hall Algebra (COHA for short). The main difference of COHA with the motivic Hall algebra is that the cohomology of the moduli stacks of objects is used instead of the constructible functions. Motivic Donaldson-Thomas series (DT-series for short) are then defined as the generating series for the Serre polynomials of the graded components of COHA.\n\nTwo different versions of COHA are introduced: ``off--shell'' version and ``on--shell'' version. The first version is related to the rapid decay cohomology of an algebraic variety with a potential. A generalization of the theory of mixed Hodge structures is obtained in the way of developing this version. In this version by using elementary topological methods strong factorization properties for the motivic DT-series are obtained and as a result integer numbers which count BPS states, and satisfy wall-crossing formulas are defined.\n\nThe second version of COHA, also called critical cohomology, is defined in terms of the sheaves of vanishing cycles. This one is related to asymptotic expansions of exponential integrals in the formal neighborhood of the critical locus of the potential. The corresponding motivic DT-series are proven to coincide with the ones introduced in [\\textit{M. Kontsevich} and \\textit{Y. Soibelman}, ``Stability structures, motivic Donaldson--Thomas invariants and cluster transformations'', preprint, \\url{arXiv:0811.2435}].\n\nIt is expected that this approach can be generalized to a wider class of 3-dimensional Calabi-Yau categories considered in [\\url{arXiv:0811.2435}]. In the case of a smooth algebra with potential by avoiding technical difficulties of the general case a stronger version of the integrality property of the generating series conjectured in [\\url{arXiv:0811.2435}] is proven.\n\nTwo more applications are considered at the end: categorification of COHA and motivic DT-invariants arising in the Chern-Simons theory with complex gauge group."
+    },
+    {
+      "hybrid_score": 0.053635065,
+      "title": "Topological gauge theories and group cohomology",
+      "year": 1990,
+      "authors": [
+        "Dijkgraaf, Robbert",
+        "Witten, Edward"
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 129, No. 2, 393-429 (1990).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/bf02096988",
+      "abstract": "The paper starts with a review of the singular homology and cohomology theory of topological spaces and the construction of topological actions. Considering that the three dimensional topological (Chern-Simons) theories are classified by classes in \\(H^4(BG,Z)\\) and the two dimensional Wess-Zumino actions are classified by classes of \\(H^3(G,Z)\\) the relation between these two theories is established through a natural map \\(H^4(BG,Z)\\to H^3(G,Z)\\). This construction is extended to manifolds with spin structure. Finally, topological gauge theories with finite groups are discussed and related to two dimensional orbifold models."
+    },
+    {
+      "hybrid_score": 0.050651513,
+      "title": "\\(\\text{sl}(3)\\) link homology",
+      "year": 2004,
+      "authors": [
+        "Khovanov, Mikhail"
+      ],
+      "journal_name": "Algebraic &amp; Geometric Topology",
+      "venue": "Algebr. Geom. Topol. 4, 1045-1081 (2004).",
+      "issn": [
+        "1472-2739",
+        "1472-2747"
+      ],
+      "doi": "10.2140/agt.2004.4.1045",
+      "abstract": "In 2000, \\textit{M. Khovanov} published his groundbreaking discovery of an \\(sl(2)\\)--link homology categorifying the \\(sl(2)\\)--link polynomial (the Kauffman state-sum model of the Jones polynomial) [Duke Math. J. 101, No. 3, 359--426 (2000; Zbl 0960.57005)]. This is a projective functor from the category of links and link cobordisms (modulo ambient isotopy) to the category of bigraded abelian groups and group homomorphisms.\n\n\n\nThis important and influential paper constructs an \\(sl(3)\\)--link homology categorifying the \\(sl(3)\\)--link polynomial. To do so, Khovanov was forced to substantially modify his original set-up and to consider a functor from the category of Kuperberg webs and certain singular cobordisms between them, called \\textit{foams}.\n\n\n\nIn subsequent work, \\textit{M. Khovanov} and \\textit{L. Rozansky} constructed an \\(sl(N)\\)--link homology categorifying the \\(sl(N)\\)--link polynomial for arbitrary \\(N\\) [Fundam. Math. 199, No. 1, 1--91 (2008; Zbl 1145.57009)]. This required the introduction of a new type of singularity in the cobordisms, making the resulting theory much more difficult to calculate with."
+    },
+    {
+      "hybrid_score": 0.045611218,
+      "title": "Homology of the zero-set of a nilpotent vector field on a flag manifold",
+      "year": 1988,
+      "authors": [
+        "de Concini, C.",
+        "Lusztig, George",
+        "Procesi, C."
+      ],
+      "journal_name": "Journal of the American Mathematical Society",
+      "venue": "J. Am. Math. Soc. 1, No. 1, 15-34 (1988).",
+      "issn": [
+        "0894-0347"
+      ],
+      "doi": "10.2307/1990965",
+      "abstract": "The authors study subvarieties of flag manifolds of connected complex reductive groups which are important in representation theory. Given a nilpotent element N of the Lie algebra of a connected complex reductive Lie group G they consider the variety consisting of all those Borel subalgebras of the Lie algebra of G which contain N. They show that the integral homology of this variety has no torsion, vanishes in odd degrees and all comes from algebraic cycles. Their method exploits the relationship between the homology of a variety and that of its set of fixed points under a torus action."
+    },
+    {
+      "hybrid_score": 0.044079367,
+      "title": "Groupe de Heisenberg et réalité. (Heisenberg group and reality)",
+      "year": 1991,
+      "authors": [
+        "Deligne, P."
+      ],
+      "journal_name": "Journal of the American Mathematical Society",
+      "venue": "J. Am. Math. Soc. 4, No. 1, 197-206 (1991).",
+      "issn": [
+        "0894-0347"
+      ],
+      "doi": "10.2307/2939259",
+      "abstract": "L'auteur examine l'extension au groupe de Heisenberg complexe de la représentation unitaire standard du groupe réel et discute l'action de \\(SL_ 2\\)."
+    },
+    {
+      "hybrid_score": 0.043469984,
+      "title": "Quantum cluster algebras.",
+      "year": 2005,
+      "authors": [
+        "Berenstein, Arkady",
+        "Zelevinsky, Andrei"
+      ],
+      "journal_name": "Advances in Mathematics",
+      "venue": "Adv. Math. 195, No. 2, 405-455 (2005).",
+      "issn": [
+        "0001-8708"
+      ],
+      "doi": "10.1016/j.aim.2004.08.003",
+      "abstract": "The authors introduce and study quantum deformations of cluster algebras. The latter form a family of commutative rings which can be used in the theory of semisimple groups. To deform such algebras can be useful in Teichmüller theory. After recalling the relevant facts about cluster algebras, the authors construct and study the quantum cluster algebras. Examples in relation with Bruhat cells are also given."
+    },
+    {
+      "hybrid_score": 0.043180626,
+      "title": "Equivariant cohomology, Koszul duality, and the localization theorem",
+      "year": 1998,
+      "authors": [
+        "Goresky, Mark",
+        "Kottwitz, Robert",
+        "MacPherson, Robert"
+      ],
+      "journal_name": "Inventiones Mathematicae",
+      "venue": "Invent. Math. 131, No. 1, 25-83 (1998).",
+      "issn": [
+        "0020-9910",
+        "1432-1297"
+      ],
+      "doi": "10.1007/s002220050197",
+      "abstract": "This paper studies the real cohomology and equivariant cohomology of a (possibly) singular space acted upon by a compact Lie group \\(K\\). The equivariant cohomology of \\(X\\) is defined to be the (real) cohomology of the Borel construction, \\(EK \\times_KX\\). Call \\(X\\) equivariantly formal of the spectral sequence for \\(H^*(EK \\times_KX; \\mathbb{R})\\) collapses at \\(E_2\\). The authors give a number of sufficient conditions for equivariant formality and show how to calculate the equivariant cohomology when \\(K\\) is a torus and \\(X\\) has only a finite number of orbits of dimensions 0 and 1. A Koszul duality equivalence is established between the derived categories of differential graded modules over the Koszul complex of a torus, \\(K\\), and over the symmetric algebra of the dual Lie algebra. Equivariant formality is characterized in terms of the Koszul duality, when \\(K\\) is a torus, and the authors explain how to use these derived categories to translate from equivariant to ordinary cohomology and back."
+    },
+    {
+      "hybrid_score": 0.04005963,
+      "title": "Quantum groups and representations of monoidal categories",
+      "year": 1990,
+      "authors": [
+        "Yetter, David N."
+      ],
+      "journal_name": "Mathematical Proceedings of the Cambridge Philosophical Society",
+      "venue": "Math. Proc. Camb. Philos. Soc. 108, No. 2, 261-290 (1990).",
+      "issn": [
+        "1469-8064",
+        "0305-0041"
+      ],
+      "doi": "10.1017/s0305004100069139",
+      "abstract": "Some categorical explanations of the interactions among knot theory, Hopf algebras and quantum groups are given. In section 8, three open questions are proposed."
+    },
+    {
+      "hybrid_score": 0.039646428,
+      "title": "Cohomology theory in abstract groups. I",
+      "year": 1947,
+      "authors": [
+        "Eilenberg, S.",
+        "MacLane, S."
+      ],
+      "journal_name": "The Annals of Mathematics",
+      "venue": "Ann. Math. (2) 48, 51-78 (1947).",
+      "issn": [
+        "0003-486X"
+      ],
+      "doi": "10.2307/1969215",
+      "abstract": "In [Ann. Math. (2) 46, 480--509 (1945; Zbl 0061.40702)] haben Verff. ein Verfahren angegeben, das in rein algebraischer Weise für einen asphärischen Raum aus der Fundamentalgruppe \\(\\varPi\\) die Kohomologiegruppen \\(H^0, H^1, \\ldots\\), mit der abelschen Koeffizientengruppe \\(G\\) bestimmt. Hier wird dieses algebraische Verfahren, unabhängig von seiner topologischen Bedeutung, verallgemeinert auf den Fall, daß die (multiplikativ geschriebene) diskrete Gruppe \\(\\varPi\\) als Gruppe von Automorphismen auf die (additiv geschriebene) abelsche Gruppe \\(G\\) operiert, d.h. \\(x (g_1 + g_2) = xg_1 + xg_2\\), \\(x_1(x_2g) = (x_1 x_2) g\\), \\(1g = g\\) für alle \\(x\\in  \\varPi\\), \\(g\\in G\\). \n\nEs ergeben sich interessante Beziehungen zur Theorie der Gruppenerweiterungen [vgl. auch Eilenberg und MacLane, Ann. Math. (2)  43, 757--831 (1942)] und die beiden folgenden Referate]. \n\nVerwandte Untersuchungen für Algebren an Stelle der Gruppe \\(\\varPi\\) bei \\textit{G. Hochschild} [Ann. Math. (2) 46, 58--67 (1945; Zbl 0063.02029); ibid. 47, 568--579 (1946; Zbl 0063.02030); Duke Math. J. 14, 921--948 (1947; Zbl 0029.34201)]. \n\n\nEine \\(n\\)-dimensionale Kokette von \\(\\Pi\\) über \\(G\\) ist eine Funktion \\(F(x_0,\\ldots, x_n)\\) von \\(n+1\\) Variablen \\(x_i\\in \\Pi\\) mit Werten in \\(G\\), die die Eigenschaft \\(F(xx_0, \\ldots, xx_n) = x F(x_0,\\ldots, x_n)\\) hat. Der Korand \\(\\delta F\\) von \\(F\\) ist eine \\(n+1\\)-dimensionale Kokette, definiert durch \n\\[ \n(\\delta F) (x_0, \\ldots, x_{n+1}) = \\sum_{i=0}^{n+1} (-1)^i F(x_, \\ldots, \\dot x_i, \\ldots, x_{n+1}),\n\\] \nwo \\(\\dot x_i\\) anzeigt, daß die Variable \\(x_i\\) wegzulassen ist. Es ist \\(\\delta(\\delta F) = 0\\). Hieraus definiert man wie üblich die Kohomologiegruppen \\(H^n(\\Pi, G)\\). \\(G\\) kann dabei sowohl diskret als auch eine topologische Gruppe sein. Im zweiten Fall werden die Operatoren \\(x\\) von \\(G\\) als stetig vorausgesetzt und die Kokettengruppen \\(C^n(\\Pi, G)\\) in naheliegender Weise topologisiert. Der Korandoperator ist dann stetig, und in \\(H^n(\\Pi, G)\\) wird eine Topologie induziert. Alle im Folgenden auftretenden Homo- und Isomorphismen sind dann ebenfalls stetig. \n\nAn Stelle der \\glqq homogenen\\grqq{} Koketten \\(F\\) ist es für die algebraischen Untersuchungen angenehmer \\glqq inhomogene\\grqq{} Koketten \\(f(x_1, \\ldots, x_n)\\) zu verwenden, die Funktionen von \\(n)\\) Variablen \\(x_i\\in\\Pi)\\) mit Werten in \\(G\\) sind und vermöge \n\\[ \nf(x_1, \\ldots, x_n) = F(1, x_1, x_1 x_2, \\ldots, x_1 x_2\\cdots x_n) \n\\] \numkehrbar eindeutig auf die \\(F\\) bezogen werden. Für sie ist dann die grundlegende Koranddefinition \n\\[ \n(\\delta f) (x_1, \\ldots, x_{n+1}) = x_1 f(x_2, \\ldots, x_{n+1}) + \n\\] \n\\[ \n+ \\sum_{i=1}^n (-1)^i f(x_1, \\ldots, x_ix_{i+1}, \\ldots, x_{n+1}) + \n\\] \n\\[ \n+ (-1)^{n+1} f(x_1, \\ldots, x_n).\n\\] \nFür die Fälle \\(n = 0, 1, 2\\) werden gruppentheoretische Deutungen der \\(H^n(\\Pi, G)\\) gegeben, z. B. ist \\(H^2(\\Pi, G)\\) isomorph mit der Baerschen Gruppe derjenigen Typen von Erweiterungen \\(E\\) und \\(G\\) durch \\(\\Pi\\), bei denen der Automorphismus \\(x\\) von \\(G\\) gerade durch die inneren Automorphismen von \\(E\\) mit den Elementen aus der Restklasse \\(x\\) induziert wird [vgl. \\textit{R. Baer}, Math. Z. 38, 375--416 (1934; Zbl 0009.01101)]. Die Kozyklen \\(f(x_1, x_2)\\) sind dabei die zugehörigen Faktorensysteme. Falls \\(xg = g\\) für alle \\(x\\in\\Pi\\), \\(g\\in G\\), erhält man die Gruppe der zentralen Erweiterungen von \\(G\\) durch \\(G\\Pi\\) [vgl, auch Verff., Ann. Math. (2) 46, 480--509 (1945; Zbl 0061.40702)]. \n\nFalls für die abelschen Gruppen \\(G_1\\), \\(G_2\\), \\(G\\) mit \\(\\Pi\\) als Gruppe von Automorphismen eine Paarung von \\(G_1\\) und \\(G_2\\) zu \\(G\\) erklärt ist, d. h. ein bilineares Produkt \\(g_1\\cup g_2\\in G\\) mit der Eigenschaft \\(x g_1 \\cup x g_2 = x(g_1\\cup g_2)\\) für alle \\(g\\in G\\), \\(x\\in\\Pi\\), so wird wie üblich für \\(F_1\\in C^p(\\Pi,G)\\), \\(F_2\\in C^q(\\Pi,G)\\) ein Cup-Produkt \\(F_1\\cup F_2\\in C^{p+q}(\\Pi,G)\\) definiert durch \n\\[ \n(F_1 \\cup F_2) (x_0, \\ldots, x_{p+q}) = F_1(x_0, \\ldots, x_p) \\cup F_2(x_0, \\ldots, x_q),\n\\] \ndas auf Grund der Gültigkeit der üblichen Korandformel sich auf die Kohomologieklassen übertragen läßt. Für die inhomogenen Koketten wird das Cup-Produkt \n\\[ \n(f_1\\cup f_2) (x_1, \\ldots, x_{p+q}) = f_1(x_1, \\ldots, x_p) \\cup x_1\\cdots x_p f_2(x_{p+1}, \\ldots, x_{p+q}).\n\\] \nWeiter kann man die Koketten \\(f\\) so normiert denken, daß \\(f_1(x_1, \\ldots, x_n) = 0\\), falls eins der \\(x_i = 1\\) ist, ohne daß dadurch die Kohomologiegruppen geändert werden. Im Folgenden seien alle Koketten normiert. \n\nFaßt man die Koketten \\(f_1(x_1, \\ldots, x_n)\\) als Funktionen von \\(x_2,\\ldots,x_n)\\) auf, deren Funktionswerte Funktionen von \\(x_1\\) mit Werten in \\(G\\), also Elemente aus \\(C^1(\\Pi,G)\\) sind, so entsteht ein Isomorphismus zwischen den Kokettengruppen \\(C^n(\\Pi,G)\\) und \\(C^{n-1}(\\Pi,C^1(\\Pi,G))\\). Dieser ist korandtreu, wenn die Operatoren \\(x\\) für \\(f\\in C^1(\\Pi,G)\\) durch \\((x f) (y) = f(yx) - yf(x)\\) \\((x, y\\in\\Pi)\\) erklärt werden. Daher folgt das Reduktionstheorem \n\\[ \nH^n(\\Pi,G) \\cong H^{n-1}((\\vPi,C^1(\\Pi, G))\\quad (n > 1). \n\\] \nEin weiteres Reduktionstheorem erhält man aus einer Darstellung \\(\\Pi = F/R = F_0/R_0\\) \\((F\\) frei, \\(F_0 = F/[R, R]\\), \\(R_0 = R/ [R, R]\\), \\([R,R] = \\) Kommutatorgruppe von \\(R)\\): Als Erweiterung von \\(R_0\\) durch \\(\\Pi\\) bestimmt \\(F_0\\) eindeutig ein \\(k\\in H^2 (\\Pi, R_0)\\). Sei \\(f_0\\in k\\). Dann induziert \\(f \\to f_0\\cup f\\) einen Isomorphismus \n\\[ \nH^n (\\Pi, \\Hom(R_0, G)) \\cong H^{n+2} (\\Pi,G)\\quad (n > 0),\n\\] \nwobei \\(\\Hom(R_0, G)\\) die Gruppe der Homomorphismen von \\(R_0\\) in \\(G\\) ist, die Paarung \\(r \\cup \\Phi)\\)  für \\(r\\in R_0\\), \\(\\Phi\\in \\Hom(R_0, G)\\) durch \\(\\Phi(r)\\) und \\((x \\Phi) (r) = (x [\\Phi(x^{-1}- r)]\\) erklärt ist. Im Falle \\(n = 0\\) entsteht durch dieses Verfahren nur ein Homomorphismus, der für den Fall \\(xg = g\\) (für alle \\(x\\in\\Pi,\\ g\\in G)\\) und \\(G = P = \\) Gruppe der reellen Zahlen mod 1 das Hopfsche Ergebnis \n\\[ \nR \\cap [F, F]/[F, R] \\cong \\text{ Charakterengruppe von }H^2(\\Pi, G)\n\\] \nliefert [vgl. \\textit{H. Hopf}, Comment. Math. Helv. 14, 257--309 (1942; Zbl 0027.09503); Verff., Ann. Math. (2) 46, 480--509 (1945) (loc. cit.)]. \n\nAls Anwendung werden die Kohomologiegruppen eines zyklischen \\(\\Pi\\) endlicher Ordnung bestimmt."
+    },
+    {
+      "hybrid_score": 0.03960187,
+      "title": "Study of a \\(\\mathbb{Z}\\)-form of the coordinate ring of a reductive group.",
+      "year": 2009,
+      "authors": [
+        "Lusztig, G."
+      ],
+      "journal_name": "Journal of the American Mathematical Society",
+      "venue": "J. Am. Math. Soc. 22, No. 3, 739-769 (2009).",
+      "issn": [
+        "1088-6834",
+        "0894-0347"
+      ],
+      "doi": "10.1090/s0894-0347-08-00603-6",
+      "abstract": "Using the canonical basis of a modified (quantum) enveloping algebra, the author constructs an integral form of the quantum coordinate ring of a Chevalley group \\(G\\). Then we get a group \\(G_A\\) defined as the group of \\(A\\)-algebra morphisms \\(O_A\\to A\\), for any algebraically closed field \\(A\\). Several useful results concerning canonical bases and braid groups are also established in the paper."
+    },
+    {
+      "hybrid_score": 0.033706527,
+      "title": "Polarization and unitary representations of solvable Lie groups. Appendix by Calvin C. Moore",
+      "year": 1971,
+      "authors": [
+        "Auslander, Louis",
+        "Kostant, Bertram"
+      ],
+      "journal_name": "Inventiones Mathematicae",
+      "venue": "Invent. Math. 14, 255-354 (1971).",
+      "issn": [
+        "0020-9910",
+        "1432-1297"
+      ],
+      "doi": "10.1007/bf01389744",
+      "abstract": "In this important, long awaited and lengthy paper the authors give proofs of their assertions announced in Bull. Am. Math. Soc. 73, 692--695 (1967; Zbl 0203.03302), and expand upon the techniques they require. Their work provides a satisfactory classification of the equivalence classes of irreducible unitary representations of solvable (real) Lie groups of type I. The paper has an informative introduction of which this review is in large part a paraphrase. \n\nIf \\(G\\) is a (real) Lie group (not necessarily connected) \\(G^{\\wedge}\\) denotes the set of all equivalence classes of irreducible unitary representations of \\(G\\). The authors' principal concern is with the case when \\(G\\) is connected, simply connected and solvable. Their main results then (1) give a simple necessary and sufficient condition for \\(G\\) to be of type I, (2) determine \\(G^{\\wedge}\\) when \\(G\\) is of type I, (3) construct elements of \\(G^{\\wedge}\\) which, when \\(G\\) is of type I, exhaust \\(G^{\\wedge}\\). \n\nThese results generalize those of \\textit{A. A. Kirillov} for connected and simply connected nilpotent Lie groups [Russ. Math. Surv. 17, No. 4, 53--104 (1962); translation from Usp. Mat. Nauk 17, No. 4(106), 57--110 (1962; Zbl 0106.25001)], and those of P. Bernat, and of L. Auslander and C. C. Moore. For the Lie group \\(G\\) let \\(\\mathfrak g\\) be the Lie algebra; and let \\(\\mathfrak g'\\) be the real dual of \\(\\mathfrak g\\). Regard \\(\\mathfrak g'\\) as a \\(G\\)-module with respect to the coadjoint representation (the contragredient of the adjoint representation). If \\(G\\) is connected, simply connected and nilpotent, Kirillov has shown that \\(G^{\\wedge}\\) is, in a natural way, in a one-to-one correspondence with the set, \\(\\mathfrak g/G\\), of all orbits of \\(G\\) operating in \\(\\mathfrak g'\\). Moreover, given \\(g\\) in \\(\\mathfrak g'\\), the element \\(\\Pi_0\\) in \\(G^{\\wedge}\\) corresponding to the orbit \\(O = G\\cdot g\\) was explicitly constructed by him as an induced representation, \\(\\mathrm{ind}_G \\xi\\), where \\(\\xi\\) is a character (a one dimensional representation) of a subgroup \\(H\\) of \\(G\\) whose Lie algebra \\(\\mathfrak h\\) is maximal among those having the property that \\(g\\) vanishes on the commutator \\([\\mathfrak h,\\mathfrak h]\\) of \\(\\mathfrak h\\). The character \\(\\xi\\) is the unique such whose differential is the restriction of \\(2\\pi ig\\) to \\(\\mathfrak h\\). One of the many remarkable aspects of Kirillov's theorem is that \\(\\pi_0 = \\mathrm{ind}_G \\xi\\) is independent of the choice of \\(H\\) among candidates with the properties just described, and this enables one to associate \\(\\pi_0\\) with the orbit \\(O\\). For example, if \\(G\\) is the Heisenberg group and \\(g\\) does not vanish on \\([\\mathfrak g,\\mathfrak g]\\) then the unique equivalence for the two choices of \\(H\\) is provided by the Fourier transform. \n\n\\textit{B. Kostant} has developed a general theory (called a quantization theory) of obtaining unitary representations of an arbitrary Lie group \\(G\\) from symplectic manifolds on which \\(G\\) operates. The first announcement of this appeared in [Proc. United States-Japan Semin. Differ. Geom., Kyoto 1965, 71 (1966; Zbl 0141.02701)] and various unpublished courses have been given (notably at M. I. T. in 1969); part of an exposition is published in [C. T. Taam (ed.), Lectures in modern analysis and applications. III, Lect.  Notes Math. 170, 87--208 (1970; Zbl 0223.53028); see also Kostant's lecture at the International Congress of Mathematicians, Nice1970, Vol. 2, 395--400 (1971; Zbl 0233.22006)]; some similar ideas have been advanced in a different context by \\textit{J.-M. Souriau} [Structure des systèmes dynamiques, Maîtrises de mathématiques. Paris: Dunod (1970; Zbl 0186.58001)]. \n\nOne of the ingredients of Kostant's theory, required in order to ensure irreducibility of representations constructed, is the notion of polarization of a symplectic manifold; this may be applied to the orbits of \\(G\\) in \\(\\mathfrak g'\\) which are naturally symplectic manifolds. If \\(O = G\\cdot g\\) then a \\(G\\)-invariant polarization of \\(O\\) is provided by a polarization at \\(g\\). This last is an essential notion of the article. A polarization at \\(g\\) in \\(\\mathfrak g'\\) is a subalgebra \\(\\mathfrak h\\) of the complexification \\(\\mathfrak g_{\\mathbb C}\\) of \\(\\mathfrak g\\) with the properties \n\n(1) \\(\\mathfrak h\\) is maximal such that \\(g\\) vanishes on its commutator \\([\\mathfrak h,\\mathfrak h]\\), \n\n(2) \\(\\mathfrak h + \\bar{\\mathfrak h}\\) is a subalgebra of \\(\\mathfrak g_{\\mathbb C}\\) where  \\(\\bar{\\mathfrak h}\\) is the complex conjugate and, \n\n(3)  \\(\\mathfrak h\\) is stable under \\(\\mathrm{Ad }G\\), where \\(G_g\\) is the isotropy group of \\(G\\) at \\(g\\) with respect to the coadjoint representation \\(\\mathrm{Ad}'\\). \n\nA polarization \\(\\mathfrak h\\) at \\(g\\) is said to be defined over \\(\\mathbb R\\) in case \\(\\mathfrak h = \\bar{\\mathfrak h}\\). \n\nIn the general case the authors define a real non-singular symmetric bilinear form \\(S_g\\) on \\(\\mathfrak e/ \\mathfrak d\\) where \\(\\mathfrak e = (\\mathfrak h + \\bar{\\mathfrak h}) \\cap \\mathfrak g\\) and \\(\\mathfrak d = \\mathfrak h\\cap \\mathfrak g\\) as follows. Let \\(x^{\\wedge}\\) in \\(\\mathfrak e/ \\mathfrak d\\) denote the image of an element \\(x\\) of \\(\\mathfrak e\\) by the quotient map \\(\\mathfrak e \\to\\mathfrak e/ \\mathfrak d\\); define the nonsingular alternating bilinear form \\(B_g^{\\wedge}\\) on \\(\\mathfrak e/ \\mathfrak d\\) by \\(B_g^{\\wedge}(x^{\\wedge}, y^{\\wedge}) = \\lbrack g,[y,x]\\rbrack\\), here \\(\\lbrack\\cdot,\\cdot\\rbrack\\) is pairing of \\(\\mathfrak g'\\) with \\(\\mathfrak g\\). Define \\(j\\) in \\(\\text{End}(\\mathfrak e/ \\mathfrak d)_{\\mathbb C}\\) by \\(j = -i\\) on \\(\\mathfrak h/ \\mathfrak d_{\\mathbb C}\\) and \\(j=i\\) on \\(\\bar{\\mathfrak h}/ \\mathfrak d_{\\mathbb C}\\) so \\(j^2 = - \\mathrm{id}\\); then define \\(S_g(x^{\\wedge},y^{\\wedge}) = B_g^{\\wedge} (jx^{\\wedge},y^{\\wedge})\\). The polarization \\(\\mathfrak h\\) is called positive if \\(S_g\\) is positive definite. The linear functional \\(g\\) is called integral, with respect to \\(G\\), if there exists a character \\(\\eta_g\\) on \\(G\\) (which may not be connected even if \\(G\\) is connected and simply connected) whose differential is the restriction of \\(2\\pi ig\\) to the Lie algebra of \\(G_g\\). \n\nThis terminology arises because Kostant's general theory shows that, when \\(G\\) is connected and simply connected, \\(g\\) is integral if and only if the cohomology class in \\(H^2(0, \\mathbb R)\\) defined by the symplectic structure on \\(O=G\\cdot g\\) lies in the image of the natural map \\(H^2(0,\\mathbb Z) \\to  H^2(0,\\mathbb R)\\); the symplectic structure is provided by the two-form \\(\\omega_f(\\sigma_fx,\\sigma_fy) = \\lbrack f,[x,y]\\rbrack = B_f(y,x)\\) where \\(\\mathfrak g_f = \\{x\\in\\mathfrak g\\mid B_f(x,y) = 0\\) for all \\(y\\) in \\(\\mathfrak g\\}\\) and \\(0\\rightarrow \\mathfrak g_f\\rightarrow \\mathfrak g\\rightarrow T_f(O)\\rightarrow 0\\) is an exact sequence with \\(T_f(0)\\) being the tangent space to the orbit \\(O\\) at the point \\(f\\). Take \\(G\\) to be an arbitrary Lie group, not necessarily connected, and let \\(g\\) in \\(\\mathfrak g'\\) be integral. Let \\(\\eta_g\\) be a character at \\(g\\) and \\(\\mathfrak h\\) a polarization at \\(g\\). Let \\(E_0\\) and \\(D_0\\) be the connected Lie subgroups of \\(G\\) with Lie algebras \\(\\mathfrak e\\) and \\(\\mathfrak d\\) respectively; put \\(E=G_gE_0\\) and \\(D=G_gD_0\\). Suppose that the polarization \\(\\mathfrak h\\) at \\(g\\) satisfies the Pukanszky condition, namely that the orbit \\(E\\cdot g\\) be closed in \\(\\mathfrak g'\\); \\(\\eta_g\\) extends to a unique character \\(\\chi_g\\) of \\(D\\) whose differential is the restriction of \\(2\\pi ig\\) to \\(\\mathfrak d\\). Set \\(X=E/D=E_0D/\\) which is clearly connected. The non-singular alternating bilinear form \\(B_g\\) on \\(\\mathfrak e/ \\mathfrak d\\), invariant as it is under the action of \\(D\\), induces a measure \\(\\mu_X\\) on \\(X\\) which is invariant under the action of \\(E\\). Let \\(\\mathcal H(E,\\chi_g)\\) be the Hilbert space formed from the equivalence classes of all measurable functions \\(\\Phi\\) on \\(E\\) such that \\(\\int \\vert \\Phi\\vert^2 < \\infty\\) and for all \\(a\\) in \\(E\\) \\(\\Phi(ab) = \\chi_g(b)^{-1}\\Phi(a)\\); it is the Hilbert space of the unitary representation \\(\\mathrm{ind}_E\\chi\\), induced in the manner of G. W. Mackey, whose action is for \\(a\\) and \\(b\\) in \\(E\\) and \\(\\Phi\\) in \\(\\mathcal H(E,\\chi_g)\\), given by \\(((\\mathrm{ind}_E \\chi(a)) \\Phi)b = \\Phi(a^{-1} b)\\) -- with the usual looseness of language. \n\nThe space \\(\\mathcal H(E,\\eta_g,\\mathfrak h)\\) of all smooth functions in \\(\\mathcal H(E,\\chi_g)\\) such that for every \\(z\\) in \\(\\mathfrak h \\Phi\\cdot z = 2\\pi i \\lbrack g, z\\rbrack\\), where \\(\\Phi\\cdot z= \\Phi\\cdot x+i\\Phi\\cdot y\\) if \\(z = x + iy\\) and \\((\\Phi\\cdot x)(e) = \\frac{d}{dt} \\Phi(e \\exp(-tx)) \\vert_{t =0}\\), forms a closed subspace of the Hilbert space \\(\\mathcal H(E,\\chi_g)\\) which is stable under \\(\\mathrm{ind}_E\\chi_g\\); this defines a subrepresentation \\(\\mathrm{ind}_E(\\eta_g,\\mathfrak h\\) of \\(\\mathrm{ind}_E\\chi_g\\). \n\nThe unitary representation of \\(G\\) corresponding to an integral \\(g\\) in \\(\\mathfrak g'\\) and any polarization \\(\\mathfrak h\\) at \\(g\\) satisfying the Pukanszky condition is defined as \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h) = \\mathrm{ind}_G(\\mathrm{ind}_E(\\eta_g,\\mathfrak h))\\), that is the result of a further induction from \\(E\\) to \\(G\\). If \\(G\\) is connected, simply connected and nilpotent then any \\(g\\) is integral, \\(\\eta_g\\) is unique and any polarization \\(\\mathfrak h\\) satisfies the Pukanszky condition; further if \\(h\\) is defined over \\(\\mathbb R\\) then \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h)\\) is just the irreducible unitary representation of \\(G\\) assigned to the orbit \\(\\mathfrak h\\) by Kirillov. \n\nIt is additionally shown by Auslander and Kostant that \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h)\\) is in fact up to equivalence independent over all positive polarizations. If \\(G\\) is the Heisenberg group then, for suitable positive \\(\\mathfrak h\\), \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h)\\) is the Segal-Bargmann representation familiar in quantum mechanics. The equivalence instead of being defined by the Fourier kernel is given by reproducing kernels of the type discussed by \\textit{V. Bargmann} [Commun. Pure Appl. Math. 14, 187--214 (1961; Zbl 0107.09102)]; this is considered in detail in the paper. \n\nTo progress from nilpotent to solvable groups presents the authors with several difficulties. To begin with solvable Lie groups need not be of type I as well known examples due to Mautner and Dixmier show. Auslander and Kostant, however, prove that if \\(G\\) is connected, simply connected and solvable then it is of type I if and only if (1) every \\(g\\) in \\(\\mathfrak g'\\) is integral and (2) every orbit \\(\\mathfrak h\\) is the intersection of a closed and an open set in \\(\\mathfrak g'\\). A weaker form of type theorem than this is by \\textit{J. Brezin} [Mem. Am. Math. Soc. 79, 122 p. (1968; Zbl 0157.36603)]. Connected, simply connected, solvable and exponential Lie groups were known to be of type I [\\textit{O. Takenouchi}, Math. J. Okayama Univ. 7, 151--161 (1957; Zbl 0080.02302)]; here exponential means that the exponential map is surjective or equivalently a diffeomorphism [\\textit{J. Dixmier}, Bull. Soc. Math. Fr. 85, 113--121 (1957; Zbl 0077.25203)]. \\textit{P. Bernat} extended Kirillov's results to such groups by finding a suitable polarization \\(\\mathfrak h\\) over \\(\\mathbb R\\) for each orbit so that the natural one-to-one correspondence of \\(\\mathfrak g'/G\\) with \\(G^\\wedge\\) might be realized by an \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h)\\) for each orbit [Ann. Sci. Éc. Norm. Supér. (3) 82, 37--99 (1965; Zbl 0138.07302)]. \\textit{L. Pukanszky} determined all possible polarizations defined over \\(\\mathbb R\\) which yield this representation [Trans. Am. Math. Soc. 126, 487--507 (1967; Zbl 0207.33605)]. For an arbitrary solvable Lie group, even of type I, representations of the form \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h)\\) with \\(\\mathfrak h\\) defined over \\(\\mathbb R\\) no longer exhaust \\(G^\\wedge\\); possibly the simplest,example, the four dimensional oscillator group, was explicitly calculated by \\textit{R. F. Streater} [Commun. Math. Phys. 4, 217--236 (1967; Zbl 0155.32503)]. The case \\(\\mathfrak h \\ne \\bar{\\mathfrak h}\\) thus has to be considered. \n\nIn addition the correspondence of \\(G^\\wedge\\) with \\(\\mathfrak g'/G\\) is not necessarily one-to-one since \\(\\eta_g\\) is not necessarily unique for \\(G_g\\) may not be connected. If \\(G\\) is solvable let \\(\\mathfrak n\\) be the maximal nilpotent ideal of \\(\\mathfrak g\\). Since \\(\\mathfrak n\\) is stable under \\(\\mathrm{Ad}(G)\\), its dual \\(\\mathfrak n'\\) is a \\(G\\)-module by contragredience. If \\(g\\) is in \\(g'\\) and \\(\\mathfrak h\\) is a polarization at \\(g\\) then \\(\\mathfrak h\\) is called strongly admissible in case \\(\\mathfrak h\\cap \\mathfrak n_{\\mathbb C}\\) is a polarization at \\(f = g\\vert \\mathfrak n\\) in \\(\\mathfrak n'\\) which is stable under \\(G_f\\), the isotropy group of \\(G\\) at \\(f\\), which contains \\(G_g\\). \n\nThe generalization of Kirillov's results due to Auslander and Kostant is given by the compendial Theorem: Let \\(G\\) be a connected, simply connected and solvable Lie group. Let \\(g\\) be an arbitrary element in \\(\\mathfrak g'\\). Then there exists a strongly admissible positive polarization \\(\\mathfrak h\\) at \\(g\\) and any such polarization satisfies the Pukanszky condition. Thus if \\(g\\) is integral and \\(\\eta_g\\) is a character at \\(g\\) the unitary representation \\(\\mathrm{ind}_G(\\eta_g,\\mathfrak h)\\) may be formed and is both irreducible and independent of which positive strongly admissible polarization at \\(g\\) is used. Moreover if \\(G\\) is of type I, so that every \\(g\\) in \\(\\mathfrak g'\\) is integral, then every irreducible unitary representation is equivalent to a representation of this form. \n\nFinally if \\(G\\) is of type I and \\(\\mathrm{ind}_G(\\eta_{g_i}, h_i)\\), \\(i =1,2\\), are two representations of this form then they are equivalent if and only if \\(g_1\\) and \\(g_2\\) lie on the same \\(G\\)-orbit and \\(\\eta_{g_1}\\) corresponds to \\(\\eta_{g_2}\\) under the isomorphism \\(G_{g_1}\\to G_{g_2}\\) defined by an element \\(a\\) of \\(G\\) such that \\(a\\cdot g_1=g_2\\). \n\nAssume \\(G\\) to be of type I. To each orbit \\(O\\) in \\(g'\\) the authors associate a torus \\(\\mathcal L_\\circ(O)\\) as follows. Let \\(g\\) be in \\(O\\) and let \\(\\mathcal L_\\circ(g)\\) be the set of all characters at \\(g\\); then \\(\\mathcal L_\\circ(g)\\) has the structure of a torus of dimension the first Betti number of \\(O\\), for it is in a natural way a principal homogeneous space of \\(G_g/(G_g)_\\circ\\) where the subscript \\(\\circ\\) denotes the identity component; \\(G_g/(G_g)_\\circ\\) is canonically isomorphic to the fundamental group \\(\\Pi_1(O)\\) of \\(O\\). The action of \\(G\\) on \\(O\\) induces for any \\(f\\) and \\(g\\) in \\(O\\) an isomorphism \\(\\sigma_{fg}\\) of \\(\\mathcal L_\\circ(f)\\) with \\(\\mathcal L_\\circ(g)\\); thus they define a torus \\(\\mathcal L_\\circ(O)\\) of dimension \\(B_1(O)\\) and for any \\(f\\) in \\(O\\) an isomorphism \\(\\sigma_f: \\mathcal L_\\circ(O)\\to \\mathcal L_\\circ(f)\\), so that for all \\(f\\) and \\(g\\) in \\(O\\) \\(\\sigma_{f,g}\\sigma_f = \\sigma_g\\).\n\nThen, by the main theorem, to any in \\(\\mathcal L_\\circ(O)\\) is unambiguously associated an irreducible unitary representation (equivalence class) \\(\\pi_\\ell\\) in \\(G\\) by putting \\(\\pi_\\ell = \\mathrm{ind}_G(\\eta_g, \\mathfrak h)\\), where \\(\\eta_g = \\sigma_g(\\ell)\\) and \\(\\mathfrak h\\) is any strongly admissible positive polarization at \\(g\\). \n\nThese constructions, which are special cases of those figuring in the general quantization theory, lead to the following generalization of Kirillov's result on the correspondence between \\(G^\\wedge\\) and \\(\\mathfrak g'/G\\): If \\(G\\) is a connected, simply connected solvable Lie group of type I the map from the union over all orbits \\(O\\) in \\(\\mathfrak g'\\) of the associated tori \\(\\mathcal L_\\circ(O)\\) to \\(G^\\wedge\\), given by \\(\\ell \\to \\pi_{ell}: \\bigcup \\mathcal L_\\circ(O)\\to G\\) is a bijection. Thus their main results do the three things claimed for them. \n\nThe detailed proofs that knit together all this structure are presented in a manner designed to make the paper fairly self-contained. Nonetheless the Newlander-Nirenberg theorem is required; results of \\textit{A. Weil} [Introduction à l'étude des variétés kähleriennes. Paris: Hermann (1958; Zbl 0137.41103)] are used in relation to the space of smooth functions \\(H(\\eta_g ,h)\\); algebraic facts concerning almost algebraic Lie groups are drawn from \\textit{L. Auslander} and \\textit{J. Brezin}, J. Algebra 8, 295--313 (1968; Zbl 0197.03002)] and most importantly G. W. Mackey's induced representation theory is essential. The account of Mackey's techniques that the- authors quote is that in the seminal memoir of  \\textit{L. Auslander} and  \\textit{C. C. Moore} [Mem. Am. Math. Soc. 62, 199 p. (1966; Zbl 0204.14202)] in which was determined which class R solvable Lie groups were type I and, when \\(G\\) was of class R and type I, \\(G^\\wedge\\) was found (class R means that all the eigenvalues of the adjoint action of \\(G\\) are of modulus 1). Indeed Moore provides in an appendix to the paper under review a strengthening of a theorem of this last memoir which is crucial to Auslander and Kostant's theorem on type. \n\nHowever much of the technique of this paper of Auslander and Kostant will itself be of wider interest. The only criticism of the article possible appears to be that there are rather numerous small misprints; but since the paper necessarily has to be read closely perhaps they cause little trouble. An introductory lecture by B. Kostant has appeared in [Group Represent. Math. Phys., Lect. Notes Phys. 6, 237--253 (1970; Zbl 0229.20048)]. Extension of Auslander and Kostant's theory to solvable Lie groups not necessarily of type I has been carried out by \\textit{L. Pukanszky} [Ann. Sci. Éc. Norm. Supér. (4) 4, 457--608 (1971; Zbl 0238.22010)]. It is even so that a book on the subject of solvable Lie groups' representations has lately been written ``Représentations des groupes de Lie résolubles'' par \\textit{P. Bernat}, \\textit{N. Conze}, \\textit{M. Duflo}, \\textit{M. Lévy-Nahas}, \\textit{M. Rais}, et \\textit{M. Vergne}, Paris: Dunod (1972; Zbl 0248.22012)."
+    },
+    {
+      "hybrid_score": 0.03218972,
+      "title": "History and perspectives of quantum groups",
+      "year": 2006,
+      "authors": [
+        "Faddeev, L. D."
+      ],
+      "journal_name": "Milan Journal of Mathematics",
+      "venue": "Milan J. Math. 74, 279-294 (2006).",
+      "issn": [
+        "1424-9286",
+        "1424-9294"
+      ],
+      "doi": "10.1007/s00032-006-0062-4",
+      "abstract": "This is as historical account on quantum group theory written by one of its inventors. The author begins with the theory of quantum spin chain, the search for an algebraic description of the Lax operators led to the first example of deformation of the universal enveloping algebra, \\(U_q(\\text{su}(2))\\). In the next section the author explains the Yang-Baxter relation, firstly imposed by him and Takhtajan, as the condition for the unambiguity of the reduction of a monomial in possibly many ways. Then he recalls the role of Drinfeld, who introduced the notion of universal \\(R\\)-matrix and of course the name ``quantum group'' itself. \n\nThe last section discusses some applications of quantum groups such as knot invariant and conformal field theory."
+    },
+    {
+      "hybrid_score": 0.030598551,
+      "title": "On the classical Young-Baxter equation for simple Lie algebras",
+      "year": 1983,
+      "authors": [
+        "Belavin, A. A.",
+        "Drinfel'd, V. G."
+      ],
+      "journal_name": "Functional Analysis and Its Applications",
+      "venue": "Funct. Anal. Appl. 17, 220-221 (1983); translation from Funkts. Anal. Prilozh. 17, No. 3, 69-70 (1983).",
+      "issn": [
+        "0016-2663",
+        "1573-8485"
+      ],
+      "doi": "10.1007/bf01078107",
+      "abstract": "The paper under review may be considered as an appendix to the previous paper by the same authors published in [Funkts. Anal. Prilozh. 16, No.3, 1-29 (1984; Zbl 0504.22016)]. In the previous paper the classical Young- Baxter equation \n\\[\n [X^{12}(u_ 1,u_ 2),X^{13}(u_ 1,u_ 3)]+[X^{12}(u_ 1,u_ 2),X^{23}(u_ 2,u_ 3)]+[X^{13}(u_ 1,u_ 3),X^{23}(u_ 2,u_ 3)]=0 \n\\]\n was studied under the following assumptions: a) \\(X(u_ 1,u_ 2\\in {\\mathfrak g}\\otimes {\\mathfrak g},{\\mathfrak g}\\) being a simple Lie algebra, dim \\({\\mathfrak g}<\\infty\\); b) \\(X(u_ 1,u_ 2)\\) is meromorphic in \\(u_ 1,u_ 2\\in U\\subseteq {\\mathbb{C}}\\); c) the tensor \\(X(u_ 1,u_ 2)\\) is not degenerate for some \\(u_ 1,u_ 2\\); d) \\(X(u_ 1,u_ 2)\\) depends only on \\(u_ 1-u_ 2\\). In the present paper it is proved that every solution to the classical Young-Baxter equation satisfying a)-c) is equivalent to a solution satisfying d)."
+    },
+    {
+      "hybrid_score": 0.030107513,
+      "title": "Locally compact quantum groups.",
+      "year": 2000,
+      "authors": [
+        "Kustermans, Johan",
+        "Vaes, Stefaan"
+      ],
+      "journal_name": "Annales Scientifiques de l’École Normale Supérieure",
+      "venue": "Ann. Sci. Éc. Norm. Supér. (4) 33, No. 6, 837-934 (2000).",
+      "issn": [
+        "0012-9593"
+      ],
+      "doi": "10.1016/s0012-9593(00)01055-7",
+      "abstract": "Summary: We propose a simple definition of a locally compact quantum group in reduced form. By the word `reduced' we mean that we suppose the Haar weight to be faithful. So in fact we define and study an arbitrary locally compact quantum group, represented on the \\(L^2\\)-space of its Haar weight. For this locally compact quantum group we construct the antipode with polar decomposition. We construct the associated multiplicative unitary and prove that it is manageable in the sense of Woronowicz. We define the modular element and prove the uniqueness of the Haar weights. Following \\textit{M. Enock} and \\textit{J. M. Schwartz} [``Kac algebras and duality of locally compact groups'' (Springer, Berlin) (1992; Zbl 0805.22003)], we construct the reduced dual, which will again be a reduced locally compact quantum group. Finally we prove that the second dual is canonically isomorphic to the original reduced locally compact quantum group, extending the Pontryagin duality theorem.\n\n A short overview of the main results of this paper appeared in \\textit{J. Kustermans} and \\textit{S. Vaes} [C. R. Acad. Sci. Paris, Sér. I, Math. 328, 871--876 (1999; Zbl 0957.46037)]."
+    },
+    {
+      "hybrid_score": 0.02371332,
+      "title": "Finite dimensional representations of the quantum analog of the enveloping algebra of a complex simple Lie algebra",
+      "year": 1988,
+      "authors": [
+        "Rosso, Marc"
+      ],
+      "journal_name": "Communications in Mathematical Physics",
+      "venue": "Commun. Math. Phys. 117, No. 4, 581-593 (1988).",
+      "issn": [
+        "1432-0916",
+        "0010-3616"
+      ],
+      "doi": "10.1007/bf01218386",
+      "abstract": "For any simple complex Lie algebra finite dimensional representations of its quantum \\(t\\)-analogue (a deformation of its universal enveloping algebra with parameter \\(t\\)) are proven to be completely reducible if t is not a root of 1. For the irreducible ones there is proven a highest weight theorem and, moreover, they are shown to be deformations of the representations of the initial enveloping algebra. For \\(\\text{sl}(2)\\) the result matches that by \\textit{A. V. Odesskii} [An analogue of the Sklyanin algebra, Funkts. Anal. Prilozh. 20, No. 2, 78--79 (1986; Zbl 0606.17013)]."
+    },
+    {
+      "hybrid_score": 0.021868963,
+      "title": "Some algebraic structures connected with the Yang-Baxter equation. Representations of quantum algebras",
+      "year": 1983,
+      "authors": [
+        "Sklyanin, E. K."
+      ],
+      "journal_name": "Functional Analysis and Its Applications",
+      "venue": "Funct. Anal. Appl. 17, 273-284 (1983); translation from Funkts. Anal. Prilozh. 17, No. 4, 34-48 (1983).",
+      "issn": [
+        "0016-2663",
+        "1573-8485"
+      ],
+      "doi": "10.1007/bf01076718",
+      "abstract": "Three series of finite-dimensional self-adjoint representations are constructed for the associative algebra with quadratic constraints introduced in the previous article [Funct. Anal. Appl. 16, 263-270 (1983; Zbl 0513.58028)]. The representations of the first series are shown to be deformations of the familiar irreducible representations of su(2). Two other series have no analogues in the theory of Lie algebras. The representations are constructed in terms of the shift and multiplication operators in some spaces of theta-functions. Some degenerate cases are also considered."
+    },
+    {
+      "hybrid_score": 0.01894473,
+      "title": "Representation theory and sheaves on the Bruhat-Tits building",
+      "year": 1997,
+      "authors": [
+        "Schneider, Peter",
+        "Stuhler, Ulrich"
+      ],
+      "journal_name": "Publications Mathématiques de l'IHÉS",
+      "venue": "Publ. Math., Inst. Hautes Étud. Sci. 85, 97-191 (1997).",
+      "issn": [
+        "0073-8301",
+        "1618-1913"
+      ],
+      "doi": "10.1007/bf02699536",
+      "abstract": "The Bruhat-Tits building \\(\\mathcal I\\) of a connected reductive algebraic group \\(G\\) over a \\(p\\)-adic field \\(K\\) displays in a geometric way the inner structure of the locally compact group \\(G(K)\\) of the set of \\(K\\)-points of \\(G\\) like the classification of the maximal subgroups of \\(G(K)\\) or the theory of its parahoric subgroups. One might consider \\(\\mathcal I\\) as a kind of skeleton of an analogue of a real symmetric space because of that it clearly appears as an important tool in the study of the theory of smooth representations of \\(G(K)\\).\n\n\nIn the paper under review, the authors develop a systematic and conceptual theory which gives a functorial way to pass from smooth representations of \\(G(K)\\) to equivariant objects on \\(\\mathcal I\\). In a cohomological theory, they also associate (again functorially) \\(G(K)\\)-equivariant sheaves on \\(\\mathcal I\\) with smooth representations of \\(G(K)\\). Their main result in this aspect is the computation of the cohomology with compact support of the sheaves coming from an irreducible smooth representation of \\(G(K)\\).\n\n\nFor any facet \\(F\\) of \\(\\mathcal I\\) the authors construct certain decreasing filtrations \\({\\mathcal P}_F\\supset U_F^{(0)}\\supset U_F^{(1)}\\supset\\cdots\\supset U_F^{(e)}\\supset\\cdots\\) of its pointwise stabilizer \\({\\mathcal P}_F\\) in \\(G(K)\\) by compact open subgroups \\(U_F^{(e)}\\) and establish some nice properties of that filtration (especially they study how the groups \\(U_F^{(e)}\\) behave if the facet \\(F\\) is moved along in the geodesic in the building \\(\\mathcal I\\)). Similar filtrations appear in papers of Prasad and Raghunathan and of Moy and Prasad.\n\n\nLet \\(e\\) be a fixed ``level''. A homological functor \\(\\gamma_e\\) is constructed from smooth representations of \\(G(K)\\) to \\(G(K)\\)-equivariant coefficient systems on \\(\\mathcal I\\): the coefficient system \\(\\gamma_e(V)\\) corresponding to a representation \\(V\\) of \\(G(K)\\) is formed by associating with a facet \\(F\\) the subspace of the \\(U_G^{(e)}\\)-invariant vectors in \\(V\\). One of the main results says that at least for any finitely generated smooth representation \\(V\\) of \\(G(K)\\) it is possible to choose the level \\(e\\) large enough so that the chain complex \\(\\gamma_e(V)\\) is an exact resolution of \\(V\\) in the category of all smooth representations of \\(G(K)\\).\n\n\nThe authors also define a general theory of Euler-Poincaré functions for finite length smooth representations of \\(G(K)\\) which are pseudo-coefficients and such that their elliptic orbital integrals coincide with the Harish-Chandra character of the given representation. This leads to a Hopf-Lefschetz type trace formula for the Harish-Chandra character of an elliptic element which, combined with results of Kazhdan, also leads to a proof of the general orthogonality formula for Harish-Chandra characters which was conjectured by Kazhdan. \n\n\nSince the polysimplicial structure of the building \\(\\mathcal I\\) is locally finite it is possible to associate with the coefficient system \\(\\gamma_e(V)\\) also a complex of cochains with finite support. Let \\(\\chi\\) denote a fixed character of the connected component of the center of \\(G\\), let \\(\\text{Alg}_\\chi(G)\\) be the category of all those smooth representations of \\(G(K)\\) on which that component acts through \\(\\chi\\), and let \\({\\mathcal H}_\\chi\\) be the \\(\\chi\\)-Hecke algebra of \\(G(K)\\). If \\(V\\) is an admissible representation in \\(\\text{Alg}_\\chi(G)\\) then the functor \\(\\Hom_G(\\cdot,{\\mathcal H}_\\chi)\\) transforms the chain complex of \\(\\gamma_e(V)\\) into the cochain complex of \\(\\gamma_e(\\widetilde V)\\) where \\(\\widetilde V\\) is the contragredient representation of \\(V\\). In case \\(V\\) is of finite length and \\(e\\) is large enough the chain complex of \\(\\gamma_e(V)\\) is a projective resolution of \\(V\\) in \\(\\text{Alg}_\\chi(G)\\). It follows that the cochain complex \\(\\gamma_e(\\widetilde V)\\) computes the Ext-groups \\({\\mathcal E}^\\star(V):=\\text{Ext}^\\star_{\\text{Alg}_\\chi(G)}(V,{\\mathcal H}_\\chi)\\). It is proven that for an arbitrary irreducible smooth representation \\(V\\) the groups \\({\\mathcal E}^\\star(V)\\) vanish except in a single degree \\(d(V)\\), that \\({\\mathcal E}^{d(V)}\\) again is an irreducible smooth representation, and moreover \\({\\mathcal E}^{d(V)}({\\mathcal E}^{d(V)}(V))=V\\).\n\n\nThe sheaves under consideration are extended to the Borel-Serre compactification of \\(\\mathcal I\\) in such a way that the cohomology at the boundary becomes computable (since the stabilizers of boundary points are parabolic subgroups this can be achieved by using the Jacquet modules of the representations as the stalks at the boundary points), then the cohomology at the boundary is calculated by adapting the strategy of Deligne and Lusztig for reductive groups over finite fields. The induced functor on the category of finite length smooth representations of \\(G(K)\\) coincides with the duality functor defined using the spherical building only by the reviewer [Trans. Am. Math. Soc. 347, No. 6, 2179-2189 (1995; Zbl 0827.22005); Erratum, ibid. 348, 4687-4690 (1996; Zbl 0827.22005)]. The fact that the duality functor preserves irreducibility was in the case \\(G=\\text{GL}_N\\) a conjecture due to Zelevinsky (for \\(\\text{GL}_N\\) this conjecture has been proved in 1994 by Procter in a completely different way by using the explicit construction given by Bushnell and Kutzko of the admissible dual of that group)."
+    },
+    {
+      "hybrid_score": 0.0005,
+      "title": "Matrix factorizations and link homology",
+      "year": 2008,
+      "authors": [
+        "Khovanov, Mikhail",
+        "Rozansky, Lev"
+      ],
+      "journal_name": "Fundamenta Mathematicae",
+      "venue": "Fundam. Math. 199, No. 1, 1-91 (2008).",
+      "issn": [
+        "1730-6329",
+        "0016-2736"
+      ],
+      "doi": "10.4064/fm199-1-1",
+      "abstract": "The authors construct, for any link \\(L\\), and each \\(n>0\\), a doubly graded homology theory \\(H_{n}(L)\\) of \\(L\\).\n\nThe Euler characteristic \\(P_{n}(L)\\) of \\(H_{n}(L)\\) turns out to be a one variable specialization of the HOMFLYPT polynomial, which can be recovered from the representation theory of quantum \\(sl(n)\\).\n\nFor \\(n=1\\), \\(H_{1}(L) \\cong\\mathbb Z\\). For \\(n=2\\), \\(H_{2}(L)\\) was defined by the first author in [Duke Math. J. 101, 359--426 (1999; Zbl 0960.57005)] and \\(P_{2}(L)\\) is the Jones polynomial. For \\(n=3, H_{3}(L)\\) was defined by the first author in [Algebr. Geom. Topol. 4, 1045--1081 (2004; Zbl 1159.57300)]."
+    }
+  ]
+}

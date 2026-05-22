@@ -1,0 +1,241 @@
+Evaluation Metrics And Result Interpretation
+============================================
+
+This project evaluates OpenSearch hybrid retrieval with leave-one-out testing.
+For each record, the evaluator uses that record as a query, retrieves top-k
+results, removes the query record itself, and scores the remaining results
+against a relevance rule.
+
+
+Evaluation Setups
+-----------------
+
+1. no-MSC evaluation
+
+   Data:
+   - output/embeddings/no_msc_clean/works.jsonl
+   - output/embeddings/no_msc_clean/embeddings.npy
+
+   Relevance rule:
+   - A result is relevant if it has the same ISSN as the query record.
+   - If ISSN is missing, the evaluator falls back to exact normalized venue.
+
+   What this measures:
+   - Whether the system retrieves papers from the same journal/venue.
+   - This is a rough proxy for journal recommendation quality.
+
+2. MSC evaluation
+
+   Data:
+   - output/embeddings/msc_clean/works.jsonl
+   - output/embeddings/msc_clean/embeddings.npy
+
+   Default relevance rule:
+   - A result is relevant if it shares at least one top-level MSC class with
+     the query record.
+   - Example: 17B56 and 17B37 are relevant to each other because both are
+     top-level MSC class 17.
+
+   What this measures:
+   - Whether the system retrieves papers from the same broad mathematical
+     subject area.
+   - This is a stronger topic-relevance evaluation than the no-MSC venue proxy.
+
+
+Hybrid Scenarios Evaluated
+--------------------------
+
+Two hybrid score settings were evaluated:
+
+1. hybrid_50_50
+   - BM25 weight: 0.5
+   - Dense vector weight: 0.5
+
+2. hybrid_70_30
+   - BM25 weight: 0.7
+   - Dense vector weight: 0.3
+
+Both scenarios produced identical aggregate scores in the current runs. That
+suggests the two weight settings are not changing the final ranking under the
+current OpenSearch normalization/candidate setup, or that both BM25 and dense
+retrieval are returning very similar top candidates.
+
+
+Metrics
+-------
+
+1. precision@10
+
+   Formula:
+   relevant results in top 10 / 10
+
+   Meaning:
+   - Measures how many of the first 10 recommendations are relevant.
+   - This is one of the most important recommender metrics because users
+     usually inspect only the top results.
+
+   Example:
+   precision@10 = 0.80 means 8 out of the top 10 results are relevant.
+
+
+2. recall@10
+
+   Formula:
+   relevant results in top 10 / total relevant results in the corpus
+
+   Meaning:
+   - Measures how much of the full relevant set is recovered in the top 10.
+   - This can look low when there are many relevant documents in the corpus.
+
+   Important:
+   - Low recall@10 does not always mean bad retrieval.
+   - If a query has 200 relevant records in the corpus, even a perfect top 10
+     can only reach recall@10 = 10 / 200 = 0.05.
+
+
+3. MRR@10
+
+   Full name:
+   mean reciprocal rank at 10
+
+   Formula:
+   1 / rank of the first relevant result
+
+   Meaning:
+   - Measures how quickly the first relevant result appears.
+   - If the first relevant result is rank 1, reciprocal rank is 1.0.
+   - If the first relevant result is rank 5, reciprocal rank is 0.2.
+   - If no relevant result appears in top 10, reciprocal rank is 0.0.
+
+   Why it matters:
+   - Good for checking whether the system gives at least one strong useful
+     result near the top.
+
+
+4. nDCG@10
+
+   Full name:
+   normalized discounted cumulative gain at 10
+
+   Meaning:
+   - Measures ranking quality across the top 10.
+   - Relevant results near rank 1 count more than relevant results near rank 10.
+   - The score is normalized between 0 and 1.
+
+   Why it matters:
+   - A system that puts relevant results at ranks 1, 2, and 3 is better than a
+     system that puts them at ranks 8, 9, and 10, even if both have the same
+     precision@10.
+
+
+Observed Results
+----------------
+
+1. no-MSC evaluation
+
+   Queries evaluated: 613
+   Relevance: same ISSN, falling back to same venue
+
+   hybrid_50_50:
+   - precision@10 = 0.1688
+   - recall@10    = 0.1641
+   - MRR@10       = 0.3368
+   - nDCG@10      = 0.2389
+
+   hybrid_70_30:
+   - precision@10 = 0.1688
+   - recall@10    = 0.1641
+   - MRR@10       = 0.3368
+   - nDCG@10      = 0.2389
+
+   Interpretation:
+   - precision@10 = 0.1688 means only about 1.7 out of the top 10 results are
+     same-journal/same-venue matches.
+   - MRR@10 = 0.3368 means the first relevant result often appears around rank
+     3 when it appears, but many queries still have weak top-10 results.
+   - nDCG@10 = 0.2389 indicates weak-to-moderate ranking quality.
+
+   Assessment:
+   - This is a useful baseline, but not a strong final journal recommender.
+   - The no-MSC relevance rule is strict and venue-oriented. A semantically
+     useful paper from a different journal is counted as non-relevant, so the
+     metric may underestimate subject similarity.
+
+
+2. MSC evaluation
+
+   Queries evaluated: 2097
+   Relevance: shared top-level MSC class
+
+   hybrid_50_50:
+   - precision@10 = 0.8579
+   - recall@10    = 0.0502
+   - MRR@10       = 0.9679
+   - nDCG@10      = 0.8792
+
+   hybrid_70_30:
+   - precision@10 = 0.8579
+   - recall@10    = 0.0502
+   - MRR@10       = 0.9679
+   - nDCG@10      = 0.8792
+
+   Interpretation:
+   - precision@10 = 0.8579 means about 8.6 out of the top 10 results share the
+     same broad MSC subject area.
+   - MRR@10 = 0.9679 means the first relevant result is almost always at rank 1.
+   - nDCG@10 = 0.8792 means relevant results are not only present, but ranked
+     very high.
+   - recall@10 = 0.0502 looks low because the top-level MSC relevance set is
+     broad. Many queries have a large number of relevant records in the corpus,
+     so top 10 can only recover a small fraction.
+
+   Assessment:
+   - The MSC pipeline is strong as a subject-area recommender.
+   - The low recall@10 is justified by the broad relevance set and small top-k.
+   - For this workflow, precision@10, MRR@10, and nDCG@10 are more meaningful
+     than recall@10.
+
+
+Why MSC Results Are Much Better Than no-MSC Results
+---------------------------------------------------
+
+MSC embeddings include:
+- title
+- MSC codes
+- MSC descriptions
+- venue
+- abstract
+
+no-MSC embeddings include:
+- title
+- venue
+- abstract
+
+The MSC workflow has explicit subject labels and subject descriptions inside
+the embedded text. Therefore, it is much easier for both BM25 and dense vector
+search to retrieve papers from the same mathematical area.
+
+The no-MSC workflow is evaluated against journal/venue matching. That is a
+harder and different target. Two papers can be topically similar but published
+in different journals, and the no-MSC evaluator counts that as not relevant.
+
+
+Overall Conclusion
+------------------
+
+The no-MSC pipeline is a weak-to-moderate baseline for same-journal retrieval.
+It needs more tuning or better relevance signals before being treated as a
+strong journal recommender.
+
+The MSC pipeline is strong for retrieving papers from the same broad
+mathematical subject area. Its high precision@10, MRR@10, and nDCG@10 justify
+the quality of the top-ranked recommendations. Its low recall@10 is expected
+because many papers share the same top-level MSC class, while evaluation only
+looks at the top 10 results.
+
+Recommended next metrics:
+- hit-rate@10: whether at least one relevant result appears in top 10
+- recall@50 or recall@100: more meaningful when the relevant set is large
+- exact-MSC evaluation: stricter than top-level MSC relevance
+- separate keyword-only and vector-only baselines: shows whether hybrid improves
+  over each branch independently

@@ -12,10 +12,12 @@ from runners.embedding_common import resolve_embedding_paths, run_embedding_job
 def text_for_no_msc_embedding(record):
     title = record.get("title") or ""
     venue = record.get("venue") or ""
+    journal_name = record.get("journal_name") or ""
     abstract = record.get("abstract") or ""
 
     parts = [
         f"Title: {title}",
+        f"Journal: {journal_name}",
         f"Venue: {venue}",
         f"Abstract: {abstract}",
     ]
@@ -75,7 +77,7 @@ def main():
         model_name=args.model,
         batch_size=args.batch_size,
         text_builder=text_for_no_msc_embedding,
-        text_fields=["title", "venue", "abstract"],
+        text_fields=["title", "journal_name", "venue", "abstract"],
         embedding_type="no_msc",
     )
 

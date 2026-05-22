@@ -1,5 +1,6 @@
 from data_sources.base import BaseSource
 from utils.http import safe_get, normalize_doi
+from utils.issn import normalize_issn_list
 from models.work import Work
 
 class CrossrefSource(BaseSource):
@@ -8,7 +9,7 @@ class CrossrefSource(BaseSource):
         # work_filters: Crossref /works filters for source searches, e.g. has-abstract:1.
         self.work_filters = work_filters or []
 
-    def search(self, query, limit=100):
+    def search(self, query, limit=1000):
         url = "https://api.crossref.org/works"
         params = {"query": query, "rows": limit}
 
@@ -51,8 +52,7 @@ class CrossrefSource(BaseSource):
         # -----------------------------
         # ISSN extraction
         # -----------------------------
-        issn = item.get("ISSN") or []
-        issn = [s.strip() for s in issn if isinstance(s, str)]
+        issn = normalize_issn_list(item.get("ISSN") or [])
 
         # -----------------------------
         # Venue
@@ -71,5 +71,6 @@ class CrossrefSource(BaseSource):
             venue=venue,
             subjects=[],      # Crossref does not provide MSC
             issn=issn,
-            source={"crossref": True}
+            source={"crossref": True},
+            journal_name=venue if issn else None,
         )

@@ -1,5 +1,8 @@
+from concurrent.futures import ThreadPoolExecutor
+
 from data_sources.base import BaseSource
 from utils.http import safe_get, normalize_doi
+from utils.issn import normalize_issn_list
 from models.work import Work
 
 OPENALEX_BASE_URL = "https://api.openalex.org"
@@ -12,6 +15,10 @@ def reconstruct_abstract(inv):
         for p in positions:
             pos[p] = word
     return " ".join(pos[i] for i in sorted(pos))
+
+
+def safe_dict(value):
+    return value if isinstance(value, dict) else {}
 
 
 class OpenAlexSource(BaseSource):
@@ -32,13 +39,14 @@ class OpenAlexSource(BaseSource):
 
         for field_name in self.topic_field_names:
             # OpenAlex /works filters need IDs, so resolve "Physics and Astronomy" via /fields search.
-            data = safe_get(f"{OPENALEX_BASE_URL}/fields", {"search": field_name, "per-page": 5})
+            data = safe_get(f"{OPENALEX_BASE_URL}/fields", {"search": field_name, "per-page": 5}) or {}
             results = data.get("results", [])
 
             exact = next(
                 (
                     item
                     for item in results
+                    if isinstance(item, dict)
                     if item.get("display_name", "").lower() == field_name.lower()
                 ),
                 None,
@@ -61,25 +69,49 @@ class OpenAlexSource(BaseSource):
 
         return ",".join(filters) if filters else None
 
-    def search(self, query, limit=100):
+    def search(self, query, limit=1000):
         url = f"{OPENALEX_BASE_URL}/works"
-        params = {"search": query, "per-page": limit}
         filter_param = self.build_filter_param()
+        page_size = min(200, limit)
+        page_count = (limit + page_size - 1) // page_size
 
-        if filter_param:
-            params["filter"] = filter_param
+        def fetch_page(page):
+            params = {
+                "search": query,
+                "per-page": page_size,
+                "page": page,
+            }
 
-        data = safe_get(url, params)
-        return data.get("results", [])
+            if filter_param:
+                params["filter"] = filter_param
+
+            data = safe_get(url, params) or {}
+            return page, data.get("results", [])
+
+        results_by_page = {}
+        with ThreadPoolExecutor(max_workers=min(5, page_count)) as executor:
+            for page, page_results in executor.map(fetch_page, range(1, page_count + 1)):
+                results_by_page[page] = page_results
+
+        results = []
+        for page in range(1, page_count + 1):
+            page_results = results_by_page.get(page, [])
+            results.extend(page_results)
+            if len(page_results) < page_size:
+                break
+
+        return results[:limit]
 
     def get_by_doi(self, doi):
         url = f"{OPENALEX_BASE_URL}/works"
         params = {"filter": f"doi:{doi}"}
-        data = safe_get(url, params)
+        data = safe_get(url, params) or {}
         res = data.get("results", [])
         return res[0] if res else None
 
     def normalize(self, item):
+        item = safe_dict(item)
+
         # -----------------------------
         # Abstract reconstruction
         # -----------------------------
@@ -88,15 +120,18 @@ class OpenAlexSource(BaseSource):
         # -----------------------------
         # Authors
         # -----------------------------
-        authors = [
-            a["author"]["display_name"]
-            for a in item.get("authorships", [])
-        ]
+        authors = []
+        for authorship in item.get("authorships") or []:
+            author = safe_dict(safe_dict(authorship).get("author"))
+            name = author.get("display_name")
+            if name:
+                authors.append(name)
 
         # -----------------------------
         # Venue + ISSN extraction
         # -----------------------------
-        host = item.get("primary_location", {}).get("source")
+        primary_location = safe_dict(item.get("primary_location"))
+        host = safe_dict(primary_location.get("source"))
 
         venue = None
         issn = []
@@ -113,7 +148,7 @@ class OpenAlexSource(BaseSource):
                 issn = [host.get("issn_l")]
 
         # Clean ISSN list
-        issn = [s.strip() for s in issn if isinstance(s, str)]
+        issn = normalize_issn_list(issn)
 
         # -----------------------------
         # Return Work object
@@ -127,5 +162,6 @@ class OpenAlexSource(BaseSource):
             venue=venue,
             subjects=[],
             issn=issn,
-            source={"openalex": True}
+            source={"openalex": True},
+            journal_name=venue if issn else None,
         )

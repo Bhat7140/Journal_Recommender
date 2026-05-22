@@ -1,3 +1,5 @@
+from concurrent.futures import ThreadPoolExecutor
+
 from data_sources.base import BaseSource
 from utils.http import safe_get, normalize_doi
 from models.work import Work
@@ -34,11 +36,33 @@ def extract_doi(item):
 
 class ZBMathSource(BaseSource):
 
-    def search(self, query, limit=100):
+    def search(self, query, limit=1000):
         url = "https://api.zbmath.org/v1/document/_search"
-        params = {"search_string": query, "size": limit}
-        data = safe_get(url, params)
-        return data.get("result", [])
+        page_size = 100
+        page_count = (limit + page_size - 1) // page_size
+
+        def fetch_page(page):
+            params = {
+                "search_string": query,
+                "page": page,
+                "results_per_page": page_size,
+            }
+            data = safe_get(url, params)
+            return page, data.get("result", [])
+
+        results_by_page = {}
+        with ThreadPoolExecutor(max_workers=min(5, page_count)) as executor:
+            for page, page_results in executor.map(fetch_page, range(page_count)):
+                results_by_page[page] = page_results
+
+        results = []
+        for page in range(page_count):
+            page_results = results_by_page.get(page, [])
+            results.extend(page_results)
+            if len(page_results) < page_size:
+                break
+
+        return results[:limit]
 
     def get_by_doi(self, doi):
         return None

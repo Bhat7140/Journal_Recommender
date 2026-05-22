@@ -1,12 +1,19 @@
 import requests
 import time
+import threading
 
-SESSION = requests.Session()
+_THREAD_LOCAL = threading.local()
+
+
+def get_session():
+    if not hasattr(_THREAD_LOCAL, "session"):
+        _THREAD_LOCAL.session = requests.Session()
+    return _THREAD_LOCAL.session
 
 def safe_get(url, params=None, retries=5):
     for i in range(retries):
         try:
-            r = SESSION.get(url, params=params, timeout=30)
+            r = get_session().get(url, params=params, timeout=30)
             if r.status_code == 429:
                 time.sleep(2 ** i)
                 continue
@@ -21,7 +28,7 @@ def safe_get(url, params=None, retries=5):
 def safe_get_text(url, params=None, retries=5):
     for i in range(retries):
         try:
-            r = SESSION.get(url, params=params, timeout=30)
+            r = get_session().get(url, params=params, timeout=30)
             if r.status_code == 429:
                 time.sleep(2 ** i)
                 continue

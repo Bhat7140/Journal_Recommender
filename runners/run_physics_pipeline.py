@@ -12,6 +12,7 @@ from data_sources.arxiv import ArxivSource
 from data_sources.crossref import CrossrefSource
 from data_sources.openalex import OpenAlexSource
 from pipelines.core_pipeline import Pipeline, merge
+from runners.metadata_cleanup import require_issn_and_journal_names
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -57,8 +58,18 @@ def run():
     # caused too many per-paper API calls, so those enrichers are paused for now.
     # openalex_pipeline = Pipeline(primary_source=oa, enrich_sources=[cr, arxiv])
     # arxiv_pipeline = Pipeline(primary_source=arxiv, enrich_sources=[cr, oa])
-    openalex_pipeline = Pipeline(primary_source=oa, enrich_sources=[cr])
-    arxiv_pipeline = Pipeline(primary_source=arxiv, enrich_sources=[cr])
+    openalex_pipeline = Pipeline(
+        primary_source=oa,
+        enrich_sources=[cr],
+        max_workers=32,
+        stop_enrichment_when_issn=True,
+    )
+    arxiv_pipeline = Pipeline(
+        primary_source=arxiv,
+        enrich_sources=[cr],
+        max_workers=32,
+        stop_enrichment_when_issn=True,
+    )
 
     all_results = []
 
@@ -76,10 +87,14 @@ def run():
 
     write_jsonl(OUTPUT_DIR / "raw.jsonl", results)
 
-    clean = [record for record in results if record.abstract and len(record.abstract) > 100]
+    clean = [
+        record
+        for record in require_issn_and_journal_names(results)
+        if record.abstract and len(record.abstract) > 100
+    ]
     write_jsonl(OUTPUT_DIR / "clean.jsonl", clean)
 
-    print(f"[PHYSICS] Raw: {len(results)} | Clean: {len(clean)}")
+    print(f"[PHYSICS] Raw: {len(results)} | Clean with ISSN: {len(clean)}")
 
 
 if __name__ == "__main__":

@@ -6,6 +6,7 @@ from data_sources.crossref import CrossrefSource
 from data_sources.openalex import OpenAlexSource
 from pipelines.core_pipeline import Pipeline
 from configs.math_keyword_config import QUERIES
+from runners.metadata_cleanup import require_issn_and_journal_names
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -19,7 +20,12 @@ def write_jsonl(path, records):
 
 def run():
     zb, cr, oa = ZBMathSource(), CrossrefSource(), OpenAlexSource()
-    pipeline = Pipeline(primary_source=zb, enrich_sources=[cr, oa])
+    pipeline = Pipeline(
+        primary_source=zb,
+        enrich_sources=[cr, oa],
+        max_workers=32,
+        stop_enrichment_when_issn=True,
+    )
 
     all_results = []
 
@@ -33,10 +39,14 @@ def run():
 
     write_jsonl(OUTPUT_DIR/"raw.jsonl", results)
 
-    clean = [r for r in results if r.abstract and len(r.abstract) > 100]
+    clean = [
+        r
+        for r in require_issn_and_journal_names(results)
+        if r.abstract and len(r.abstract) > 100
+    ]
     write_jsonl(OUTPUT_DIR/"clean.jsonl", clean)
 
-    print(f"[NO-MSC] Raw: {len(results)} | Clean: {len(clean)}")
+    print(f"[NO-MSC] Raw: {len(results)} | Clean with ISSN: {len(clean)}")
 
 if __name__ == "__main__":
     run()
