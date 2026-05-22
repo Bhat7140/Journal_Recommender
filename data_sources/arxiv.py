@@ -38,7 +38,7 @@ def parse_entries(xml_text):
 
 class ArxivSource(BaseSource):
 
-    def search(self, query, limit=100):
+    def search(self, query, limit=1000):
         params = {
             "search_query": query,
             "start": 0,

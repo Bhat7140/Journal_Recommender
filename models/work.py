@@ -12,3 +12,4 @@ class Work:
     subjects: List[str] # MSC or no MSC
     issn: List[str]
     source: Dict[str, bool]
+    journal_name: Optional[str] = None

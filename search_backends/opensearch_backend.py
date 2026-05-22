@@ -6,6 +6,12 @@ from typing import Dict, Iterable, List, Optional
 import numpy as np
 
 
+# Lexical side of hybrid search: boost title most, then venue, with abstract
+# and authors contributing as lower-weight metadata/text matches.
+DEFAULT_HYBRID_FIELDS = ["title^3", "abstract", "journal_name^2", "venue^2", "authors"]
+MSC_HYBRID_FIELDS = ["title^3", "subjects^3", "abstract", "journal_name^2", "venue^2", "authors"]
+
+
 def load_opensearch_client(
     host: str,
     port: int,
@@ -13,6 +19,7 @@ def load_opensearch_client(
     password: str,
     use_ssl: bool,
     verify_certs: bool,
+    timeout: int = 60,
 ):
     try:
         from opensearchpy import OpenSearch
@@ -28,6 +35,41 @@ def load_opensearch_client(
         use_ssl=use_ssl,
         verify_certs=verify_certs,
         ssl_show_warn=verify_certs,
+        timeout=timeout,
+        max_retries=3,
+        retry_on_timeout=True,
+    )
+
+
+def create_hybrid_search_pipeline(
+    client,
+    pipeline_name: str,
+    bm25_weight: float = 0.5,
+    dense_weight: float = 0.5,
+):
+    # BM25 and kNN scores live on different scales, so OpenSearch needs a
+    # search pipeline to normalize and combine them into one final _score.
+    body = {
+        "description": "Normalize and combine BM25 and dense vector scores.",
+        "phase_results_processors": [
+            {
+                "normalization-processor": {
+                    "normalization": {"technique": "min_max"},
+                    "combination": {
+                        "technique": "arithmetic_mean",
+                        "parameters": {
+                            "weights": [bm25_weight, dense_weight],
+                        },
+                    },
+                }
+            }
+        ],
+    }
+
+    return client.transport.perform_request(
+        "PUT",
+        f"/_search/pipeline/{pipeline_name}",
+        body=body,
     )
 
 
@@ -85,6 +127,10 @@ def create_no_msc_index(
                 "abstract": {"type": "text"},
                 "year": {"type": "integer"},
                 "authors": {"type": "keyword"},
+                "journal_name": {
+                    "type": "text",
+                    "fields": {"keyword": {"type": "keyword"}},
+                },
                 "venue": {
                     "type": "text",
                     "fields": {"keyword": {"type": "keyword"}},
@@ -137,6 +183,7 @@ def iter_index_actions(
                 "abstract": record.get("abstract"),
                 "year": record.get("year"),
                 "authors": record.get("authors") or [],
+                "journal_name": record.get("journal_name"),
                 "venue": record.get("venue"),
                 "subjects": record.get("subjects") or [],
                 "issn": record.get("issn") or [],
@@ -206,6 +253,22 @@ def bulk_index_no_msc(
     }
 
 
+def bulk_index_embeddings(
+    client,
+    index_name: str,
+    embedding_dir: Path,
+    chunk_size: int,
+    recreate: bool = False,
+):
+    return bulk_index_no_msc(
+        client=client,
+        index_name=index_name,
+        embedding_dir=embedding_dir,
+        chunk_size=chunk_size,
+        recreate=recreate,
+    )
+
+
 def vector_search(
     client,
     index_name: str,
@@ -235,19 +298,80 @@ def vector_search(
     return client.search(index=index_name, body=body)
 
 
+def hybrid_search(
+    client,
+    index_name: str,
+    query_text: str,
+    query_embedding: np.ndarray,
+    top_k: int,
+    search_pipeline: str,
+    source_fields: Optional[List[str]] = None,
+    lexical_fields: Optional[List[str]] = None,
+    dense_k: Optional[int] = None,
+):
+    if query_embedding.ndim != 1:
+        raise ValueError("query_embedding must be a single vector")
+
+    vector = query_embedding.astype(float).tolist()
+    lexical_fields = lexical_fields or DEFAULT_HYBRID_FIELDS
+    # Ask dense retrieval for a wider candidate pool than the final result
+    # size, so fusion has enough vector candidates to combine with BM25 hits.
+    dense_k = dense_k or max(top_k, 50)
+
+    body = {
+        "size": top_k,
+        "query": {
+            "hybrid": {
+                "queries": [
+                    {
+                        # BM25 branch: matches the user's title/abstract text
+                        # against indexed metadata and text fields.
+                        "multi_match": {
+                            "query": query_text,
+                            "fields": lexical_fields,
+                        }
+                    },
+                    {
+                        # Dense branch: compares the query embedding with the
+                        # stored document embeddings in the knn_vector field.
+                        "knn": {
+                            "embedding": {
+                                "vector": vector,
+                                "k": dense_k,
+                            }
+                        }
+                    },
+                ]
+            }
+        },
+    }
+
+    if source_fields is not None:
+        body["_source"] = source_fields
+
+    return client.search(
+        index=index_name,
+        body=body,
+        params={"search_pipeline": search_pipeline},
+    )
+
+
 def keyword_search(
     client,
     index_name: str,
     query_text: str,
     top_k: int,
     source_fields: Optional[List[str]] = None,
+    lexical_fields: Optional[List[str]] = None,
 ):
+    lexical_fields = lexical_fields or DEFAULT_HYBRID_FIELDS
+
     body = {
         "size": top_k,
         "query": {
             "multi_match": {
                 "query": query_text,
-                "fields": ["title^3", "abstract", "venue^2", "authors"],
+                "fields": lexical_fields,
             }
         },
     }

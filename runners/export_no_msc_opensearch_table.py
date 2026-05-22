@@ -21,6 +21,7 @@ FIELDS = [
     "title",
     "year",
     "authors",
+    "journal_name",
     "venue",
     "issn",
     "doi",
