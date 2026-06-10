@@ -1,0 +1,272 @@
+{
+  "query": {
+    "title": "Cohomology and representations of quantum groups",
+    "abstract": "This manuscript studies cohomological methods for quantum groups and related algebraic structures. We investigate representations, homological invariants, and connections with Lie algebra cohomology."
+  },
+  "recommendations": [
+    {
+      "journal_name": "Annals of Representation Theory",
+      "issn": [
+        "1001-7007",
+        "3003-1011"
+      ],
+      "match_score_percent": 58,
+      "confidence": "high",
+      "reason": "The manuscript aligns with categorical symmetries, which is a strong theme in Annals of Representation Theory.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Lie Algebra Methods in Annals of Representation Theory",
+        "hybrid_score": 0.10697821,
+        "year": 1976,
+        "doi": "10.9935/0001.189"
+      },
+      "supporting_papers": [
+        {
+          "title": "Lie Algebra Methods in Annals of Representation Theory",
+          "hybrid_score": 0.10697821
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "journal_name": "Annals of Algebra",
+      "issn": [
+        "1002-7014",
+        "3006-1022"
+      ],
+      "match_score_percent": 57,
+      "confidence": "medium",
+      "reason": "The manuscript aligns with categorical symmetries, which is a strong theme in Annals of Algebra.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Lie Algebra Methods in Annals of Algebra",
+        "hybrid_score": 0.28257054,
+        "year": 1971,
+        "doi": "10.4257/0002.833"
+      },
+      "supporting_papers": [
+        {
+          "title": "Lie Algebra Methods in Annals of Algebra",
+          "hybrid_score": 0.28257054
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "journal_name": "Lecture Notes in Representation Theory",
+      "issn": [
+        "1003-7021",
+        "3009-1033"
+      ],
+      "match_score_percent": 53,
+      "confidence": "medium",
+      "reason": "The manuscript aligns with Lie algebra methods, which is a strong theme in Lecture Notes in Representation Theory.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Representation Theory in Lecture Notes in Representation Theory",
+        "hybrid_score": 0.37510691,
+        "year": 1991,
+        "doi": "10.5552/0003.259"
+      },
+      "supporting_papers": [
+        {
+          "title": "Representation Theory in Lecture Notes in Representation Theory",
+          "hybrid_score": 0.37510691
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "journal_name": "Journal of Algebra",
+      "issn": [
+        "1004-7028",
+        "3012-1044"
+      ],
+      "match_score_percent": 47,
+      "confidence": "medium",
+      "reason": "The manuscript aligns with quantum cohomology, which is a strong theme in Journal of Algebra.",
+      "supporting_paper_count": 2,
+      "best_matching_paper": {
+        "title": "Cohomology Theory in Journal of Algebra",
+        "hybrid_score": 0.2123101,
+        "year": 2021,
+        "doi": "10.1711/0004.847"
+      },
+      "supporting_papers": [
+        {
+          "title": "Cohomology Theory in Journal of Algebra",
+          "hybrid_score": 0.2123101
+        },
+        {
+          "title": "Graded Structures study 2",
+          "hybrid_score": 0.3297885
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "journal_name": "Journal of Lie Theory",
+      "issn": [
+        "1005-7035",
+        "3015-1055"
+      ],
+      "match_score_percent": 38,
+      "confidence": "medium",
+      "reason": "The manuscript aligns with Lie algebra methods, which is a strong theme in Journal of Lie Theory.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Homological Invariants in Journal of Lie Theory",
+        "hybrid_score": 0.43811424,
+        "year": 2009,
+        "doi": "10.6925/0005.691"
+      },
+      "supporting_papers": [
+        {
+          "title": "Homological Invariants in Journal of Lie Theory",
+          "hybrid_score": 0.43811424
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "journal_name": "Annals of Mathematical Physics",
+      "issn": [
+        "1006-7042",
+        "3018-1066"
+      ],
+      "match_score_percent": 36,
+      "confidence": "medium",
+      "reason": "The manuscript aligns with graded structures, which is a strong theme in Annals of Mathematical Physics.",
+      "supporting_paper_count": 2,
+      "best_matching_paper": {
+        "title": "Cohomology Theory in Annals of Mathematical Physics",
+        "hybrid_score": 0.45055251,
+        "year": 1999,
+        "doi": "10.6977/0006.266"
+      },
+      "supporting_papers": [
+        {
+          "title": "Cohomology Theory in Annals of Mathematical Physics",
+          "hybrid_score": 0.45055251
+        },
+        {
+          "title": "Cohomology Theory study 2",
+          "hybrid_score": 0.22246059
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "journal_name": "Advances in Representation Theory",
+      "issn": [
+        "1007-7049",
+        "3021-1077"
+      ],
+      "match_score_percent": 30,
+      "confidence": "medium",
+      "reason": "The manuscript aligns with Lie algebra methods, which is a strong theme in Advances in Representation Theory.",
+      "supporting_paper_count": 3,
+      "best_matching_paper": {
+        "title": "Cohomology Theory in Advances in Representation Theory",
+        "hybrid_score": 0.33238288,
+        "year": 1994,
+        "doi": "10.5422/0007.755"
+      },
+      "supporting_papers": [
+        {
+          "title": "Cohomology Theory in Advances in Representation Theory",
+          "hybrid_score": 0.33238288
+        },
+        {
+          "title": "Representation Theory study 2",
+          "hybrid_score": 0.29638714
+        },
+        {
+          "title": "Lie Algebra Methods study 3",
+          "hybrid_score": 0.1184332
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "journal_name": "Annals of Mathematical Physics",
+      "issn": [
+        "1008-7056",
+        "3024-1088"
+      ],
+      "match_score_percent": 24,
+      "confidence": "low",
+      "reason": "The manuscript aligns with graded structures, which is a strong theme in Annals of Mathematical Physics.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Graded Structures in Annals of Mathematical Physics",
+        "hybrid_score": 0.2325591,
+        "year": 1974,
+        "doi": "10.4456/0008.680"
+      },
+      "supporting_papers": [
+        {
+          "title": "Graded Structures in Annals of Mathematical Physics",
+          "hybrid_score": 0.2325591
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "journal_name": "Lecture Notes in Lie Theory",
+      "issn": [
+        "1009-7063",
+        "3027-1099"
+      ],
+      "match_score_percent": 20,
+      "confidence": "low",
+      "reason": "The manuscript aligns with Lie algebra methods, which is a strong theme in Lecture Notes in Lie Theory.",
+      "supporting_paper_count": 3,
+      "best_matching_paper": {
+        "title": "Quantum Cohomology in Lecture Notes in Lie Theory",
+        "hybrid_score": 0.10857836,
+        "year": 1997,
+        "doi": "10.7543/0009.470"
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantum Cohomology in Lecture Notes in Lie Theory",
+          "hybrid_score": 0.10857836
+        },
+        {
+          "title": "Representation Theory study 2",
+          "hybrid_score": 0.1583812
+        },
+        {
+          "title": "Homological Invariants study 3",
+          "hybrid_score": 0.39856663
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "journal_name": "Lecture Notes in Algebra",
+      "issn": [
+        "1010-7070",
+        "3030-1110"
+      ],
+      "match_score_percent": 17,
+      "confidence": "low",
+      "reason": "The manuscript aligns with cohomology theory, which is a strong theme in Lecture Notes in Algebra.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Cohomology Theory in Lecture Notes in Algebra",
+        "hybrid_score": 0.11336383,
+        "year": 1980,
+        "doi": "10.7916/0010.710"
+      },
+      "supporting_papers": [
+        {
+          "title": "Cohomology Theory in Lecture Notes in Algebra",
+          "hybrid_score": 0.11336383
+        }
+      ],
+      "rank": 10
+    }
+  ]
+}

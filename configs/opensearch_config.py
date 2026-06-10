@@ -18,4 +18,9 @@ MSC_EMBEDDING_DIR = BASE_DIR / "output" / "embeddings" / "msc_clean"
 # Search pipeline used to fuse MSC-aware BM25 matches with dense vector matches.
 MSC_HYBRID_PIPELINE_NAME = "journal_recommender_msc_hybrid"
 
+PHYSICS_INDEX_NAME = "journal_recommender_physics"
+PHYSICS_EMBEDDING_DIR = BASE_DIR / "output" / "embeddings" / "physics_clean"
+# Search pipeline used to fuse physics BM25 matches with dense vector matches.
+PHYSICS_HYBRID_PIPELINE_NAME = "journal_recommender_physics_hybrid"
+
 OPENSEARCH_BULK_CHUNK_SIZE = 500

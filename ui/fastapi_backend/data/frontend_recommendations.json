@@ -1,0 +1,287 @@
+{
+  "query": {
+    "title": "Cohomology and representations of quantum groups",
+    "abstract": "This manuscript studies cohomological methods for quantum groups and related algebraic structures. We investigate representations, homological invariants, and connections with Lie algebra cohomology."
+  },
+  "recommendations": [
+    {
+      "journal_name": "Astérisque",
+      "issn": [
+        "0303-1179",
+        "2492-5926"
+      ],
+      "match_score_percent": 60,
+      "confidence": "medium",
+      "reason": "The manuscript covers cohomological methods and representations, which fits well with the scope of Astérisque but lacks direct relevance to quantum groups.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Quantum groups and quantum cohomology",
+        "year": 2019,
+        "doi": "10.24033/ast.1074",
+        "hybrid_score": 0.5
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantum groups and quantum cohomology",
+          "hybrid_score": 0.5
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "journal_name": "Memoirs of the American Mathematical Society",
+      "issn": [
+        "0065-9266",
+        "1947-6221"
+      ],
+      "match_score_percent": 59,
+      "confidence": "medium",
+      "reason": "The manuscript introduces quantum linear groups, which aligns with the scope of Memoirs of the American Mathematical Society.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Quantum linear groups",
+        "year": 1991,
+        "doi": "10.1090/memo/0439",
+        "hybrid_score": 0.31253016
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantum linear groups",
+          "hybrid_score": 0.31253016
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "journal_name": "Geometriae Dedicata",
+      "issn": [
+        "0046-5755",
+        "1572-9168"
+      ],
+      "match_score_percent": 58,
+      "confidence": "high",
+      "reason": "Quantum groups at roots of 1 is directly related to the manuscript's focus on quantum groups",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Quantum groups at roots of 1",
+        "year": 1990,
+        "doi": "10.1007/bf00147341",
+        "hybrid_score": 0.21282756
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantum groups at roots of 1",
+          "hybrid_score": 0.21282756
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "journal_name": "Communications in Mathematical Physics",
+      "issn": [
+        "0010-3616",
+        "1432-0916"
+      ],
+      "match_score_percent": 40,
+      "confidence": "medium",
+      "reason": "The manuscript is closely related to quantum cohomology and flag manifolds, which is a focus of Communications in Mathematical Physics.",
+      "supporting_paper_count": 7,
+      "best_matching_paper": {
+        "title": "Quantum cohomology of flag manifolds and Toda lattices",
+        "year": 1995,
+        "doi": "10.1007/bf02101846",
+        "hybrid_score": 0.22836629
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantum cohomology of flag manifolds and Toda lattices",
+          "hybrid_score": 0.22836629
+        },
+        {
+          "title": "Quantum deformation of Lorentz group",
+          "hybrid_score": 0.13452691
+        },
+        {
+          "title": "Gromov-Witten classes, quantum cohomology, and enumerative geometry",
+          "hybrid_score": 0.10721458
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "journal_name": "Progress in Mathematics",
+      "issn": [
+        "0743-1643",
+        "2296-505X"
+      ],
+      "match_score_percent": 39,
+      "confidence": "medium",
+      "reason": "The manuscript discusses graded Lie algebras and intersection cohomology, which is relevant to some aspects of the study of quantum groups.",
+      "supporting_paper_count": 1,
+      "best_matching_paper": {
+        "title": "Graded Lie algebras and intersection cohomology.",
+        "year": 2010,
+        "doi": "10.1007/978-0-8176-4697-4_8",
+        "hybrid_score": 0.25728193
+      },
+      "supporting_papers": [
+        {
+          "title": "Graded Lie algebras and intersection cohomology.",
+          "hybrid_score": 0.25728193
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "journal_name": "Journal of the American Mathematical Society",
+      "issn": [
+        "0894-0347",
+        "1088-6834"
+      ],
+      "match_score_percent": 39,
+      "confidence": "medium",
+      "reason": "Quantum coadjoint action studies related algebraic structures, but focuses on Lie algebra cohomology",
+      "supporting_paper_count": 3,
+      "best_matching_paper": {
+        "title": "Quantum coadjoint action",
+        "year": 1992,
+        "doi": "10.2307/2152754",
+        "hybrid_score": 0.18971582
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantum coadjoint action",
+          "hybrid_score": 0.18971582
+        },
+        {
+          "title": "Quiver varieties and finite dimensional representations of quantum affine algebras",
+          "hybrid_score": 0.09610996
+        },
+        {
+          "title": "Study of a \\(\\mathbb{Z}\\)-form of the coordinate ring of a reductive group.",
+          "hybrid_score": 0.03960187
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "journal_name": "Lecture Notes in Mathematics",
+      "issn": [
+        "0075-8434",
+        "1617-9692"
+      ],
+      "match_score_percent": 39,
+      "confidence": "medium",
+      "reason": "Quantization and unitary representations is related to cohomology theory, but focuses on different aspects",
+      "supporting_paper_count": 3,
+      "best_matching_paper": {
+        "title": "Quantization and unitary representations. I: Prequantization",
+        "year": 1970,
+        "doi": "10.1007/bfb0079068",
+        "hybrid_score": 0.16601175
+      },
+      "supporting_papers": [
+        {
+          "title": "Quantization and unitary representations. I: Prequantization",
+          "hybrid_score": 0.16601175
+        },
+        {
+          "title": "A vanishing theorem in relative Lie algebra cohomology",
+          "hybrid_score": 0.10659478
+        },
+        {
+          "title": "Characteristic classes of representations",
+          "hybrid_score": 0.09186713
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "journal_name": "Proceedings of the National Academy of Sciences",
+      "issn": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "match_score_percent": 21,
+      "confidence": "low",
+      "reason": "The manuscript does not have a clear connection to bialgebra cohomology and deformations, which are topics discussed in Proceedings of the National Academy of Sciences.",
+      "supporting_paper_count": 2,
+      "best_matching_paper": {
+        "title": "Bialgebra cohomology, deformations, and quantum groups",
+        "year": 1990,
+        "doi": "10.1073/pnas.87.1.478",
+        "hybrid_score": 0.2616133
+      },
+      "supporting_papers": [
+        {
+          "title": "Bialgebra cohomology, deformations, and quantum groups",
+          "hybrid_score": 0.2616133
+        },
+        {
+          "title": "Spin and wedge representations of infinite-dimensional Lie algebras and groups",
+          "hybrid_score": 0.16557425
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "journal_name": "The Annals of Mathematics",
+      "issn": [
+        "0003-486X"
+      ],
+      "match_score_percent": 20,
+      "confidence": "low",
+      "reason": "Cohomology theory in abstract groups is unrelated to the manuscript's focus on quantum groups",
+      "supporting_paper_count": 3,
+      "best_matching_paper": {
+        "title": "Cohomology theory in abstract groups. II",
+        "year": 1947,
+        "doi": "10.2307/1969174",
+        "hybrid_score": 0.16817729
+      },
+      "supporting_papers": [
+        {
+          "title": "Cohomology theory in abstract groups. II",
+          "hybrid_score": 0.16817729
+        },
+        {
+          "title": "An analogue of the Borel-Weil-Bott theorem for Hermitian symmetric pairs of non-compact type",
+          "hybrid_score": 0.0897664
+        },
+        {
+          "title": "Cohomology theory in abstract groups. I",
+          "hybrid_score": 0.039646428
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "journal_name": "Algebraic &amp; Geometric Topology",
+      "issn": [
+        "1472-2739",
+        "1472-2747"
+      ],
+      "match_score_percent": 2,
+      "confidence": "low",
+      "reason": "Cohomology methods not directly related to Lie algebra cohomology",
+      "supporting_paper_count": 2,
+      "best_matching_paper": {
+        "title": "A new approach to twisted \\(K\\)-theory of compact Lie groups",
+        "year": 2020,
+        "doi": "10.2140/agt.2020.20.135",
+        "hybrid_score": 0.21866186
+      },
+      "supporting_papers": [
+        {
+          "title": "A new approach to twisted \\(K\\)-theory of compact Lie groups",
+          "hybrid_score": 0.21866186
+        },
+        {
+          "title": "\\(\\text{sl}(3)\\) link homology",
+          "hybrid_score": 0.050651513
+        }
+      ],
+      "rank": 10
+    }
+  ]
+}
