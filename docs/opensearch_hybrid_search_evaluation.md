@@ -56,7 +56,7 @@ MSC_HYBRID_PIPELINE_NAME = "journal_recommender_msc_hybrid"
 ```
 
 
-### `search_backends/opensearch_backend.py`
+### `core/search/opensearch_backend.py`
 
 Reusable OpenSearch backend.
 
@@ -106,7 +106,7 @@ The `embedding` field is an OpenSearch `knn_vector` field.
 The no-MSC embedding text is created by:
 
 ```python
-runners/create_no_msc_embeddings.py
+ingestion/embeddings/create_no_msc_embeddings.py
 ```
 
 Format:
@@ -137,13 +137,13 @@ output/embeddings/no_msc_clean/embedding_metadata.json
 Runner:
 
 ```text
-runners/index_no_msc_opensearch.py
+ingestion/indexing/index_no_msc_opensearch.py
 ```
 
 Command:
 
 ```powershell
-python -m runners.index_no_msc_opensearch --recreate
+python -m ingestion.indexing.index_no_msc_opensearch --recreate
 ```
 
 
@@ -152,13 +152,13 @@ python -m runners.index_no_msc_opensearch --recreate
 Runner:
 
 ```text
-runners/search_no_msc_opensearch.py
+core/search/search_no_msc_opensearch.py
 ```
 
 Example hybrid search:
 
 ```powershell
-python -m runners.search_no_msc_opensearch --mode hybrid --create-hybrid-pipeline --top-k 10 --title "Quantum groups and operator algebras" --abstract "This paper studies representations, cohomology, and algebraic structures related to noncommutative operator theory."
+python -m core.search.search_no_msc_opensearch --mode hybrid --create-hybrid-pipeline --top-k 10 --title "Quantum groups and operator algebras" --abstract "This paper studies representations, cohomology, and algebraic structures related to noncommutative operator theory."
 ```
 
 Modes:
@@ -177,7 +177,7 @@ hybrid
 The MSC embedding text is created by:
 
 ```python
-runners/create_msc_embeddings.py
+ingestion/embeddings/create_msc_embeddings.py
 ```
 
 Format:
@@ -213,13 +213,13 @@ output/embeddings/msc_clean/embedding_metadata.json
 Runner:
 
 ```text
-runners/index_msc_opensearch.py
+ingestion/indexing/index_msc_opensearch.py
 ```
 
 Command:
 
 ```powershell
-python -m runners.index_msc_opensearch --recreate
+python -m ingestion.indexing.index_msc_opensearch --recreate
 ```
 
 Indexed result from the run:
@@ -239,13 +239,13 @@ errors     : 0
 Runner:
 
 ```text
-runners/search_msc_opensearch.py
+core/search/search_msc_opensearch.py
 ```
 
 Example:
 
 ```powershell
-python -m runners.search_msc_opensearch --mode hybrid --create-hybrid-pipeline --title "Lie algebra cohomology" --subjects "17B56 20G05" --abstract "We study algebraic representations and quantum group cohomology."
+python -m core.search.search_msc_opensearch --mode hybrid --create-hybrid-pipeline --title "Lie algebra cohomology" --subjects "17B56 20G05" --abstract "We study algebraic representations and quantum group cohomology."
 ```
 
 Modes:
@@ -358,7 +358,7 @@ Example:
 The MSC evaluator also supports stricter exact-code relevance:
 
 ```powershell
-python -m runners.evaluate_msc_hybrid_opensearch --relevance-mode exact
+python -m core.evaluation.evaluate_msc_hybrid_opensearch --relevance-mode exact
 ```
 
 
@@ -750,8 +750,8 @@ output/opensearch_evaluation_msc/hybrid_evaluation_report.html
 Visualization runner files:
 
 ```text
-runners/visualize_no_msc_hybrid_evaluation.py
-runners/visualize_msc_hybrid_evaluation.py
+core/evaluation/visualize_no_msc_hybrid_evaluation.py
+core/evaluation/visualize_msc_hybrid_evaluation.py
 ```
 
 The reports include:
@@ -769,55 +769,55 @@ The reports include:
 Index no-MSC:
 
 ```powershell
-python -m runners.index_no_msc_opensearch --recreate
+python -m ingestion.indexing.index_no_msc_opensearch --recreate
 ```
 
 Search no-MSC:
 
 ```powershell
-python -m runners.search_no_msc_opensearch --mode hybrid --create-hybrid-pipeline --title "Quantum groups" --abstract "This paper studies representations and cohomology."
+python -m core.search.search_no_msc_opensearch --mode hybrid --create-hybrid-pipeline --title "Quantum groups" --abstract "This paper studies representations and cohomology."
 ```
 
 Evaluate no-MSC:
 
 ```powershell
-python -m runners.evaluate_no_msc_hybrid_opensearch
+python -m core.evaluation.evaluate_no_msc_hybrid_opensearch
 ```
 
 Visualize no-MSC:
 
 ```powershell
-python -m runners.visualize_no_msc_hybrid_evaluation
+python -m core.evaluation.visualize_no_msc_hybrid_evaluation
 ```
 
 Index MSC:
 
 ```powershell
-python -m runners.index_msc_opensearch --recreate
+python -m ingestion.indexing.index_msc_opensearch --recreate
 ```
 
 Search MSC:
 
 ```powershell
-python -m runners.search_msc_opensearch --mode hybrid --create-hybrid-pipeline --title "Lie algebra cohomology" --subjects "17B56 20G05" --abstract "We study representations and quantum group cohomology."
+python -m core.search.search_msc_opensearch --mode hybrid --create-hybrid-pipeline --title "Lie algebra cohomology" --subjects "17B56 20G05" --abstract "We study representations and quantum group cohomology."
 ```
 
 Evaluate MSC:
 
 ```powershell
-python -m runners.evaluate_msc_hybrid_opensearch
+python -m core.evaluation.evaluate_msc_hybrid_opensearch
 ```
 
 Evaluate MSC with exact MSC-code relevance:
 
 ```powershell
-python -m runners.evaluate_msc_hybrid_opensearch --relevance-mode exact
+python -m core.evaluation.evaluate_msc_hybrid_opensearch --relevance-mode exact
 ```
 
 Visualize MSC:
 
 ```powershell
-python -m runners.visualize_msc_hybrid_evaluation
+python -m core.evaluation.visualize_msc_hybrid_evaluation
 ```
 
 

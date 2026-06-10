@@ -99,7 +99,10 @@ core/
     export_no_msc_opensearch_table.py
 
 ui/
-  app.py                       UI placeholder
+  src/                         React/Vite frontend
+  fastapi_backend/             FastAPI API used by the frontend
+  package.json                 Frontend/backend development scripts
+  requirements.txt             Python dependencies for the API
 
 output/
   metadata/                    Raw and clean metadata JSONL files
